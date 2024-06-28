@@ -15,7 +15,7 @@
       name="keywords"
       content="software, hardware, showcase, portfolio, partner, projects, modern, it, digital, studio, storage, animation, transition, backup"
     />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
     <!-- SOCIAL MEDIA META -->
     <meta
       property="og:description"
@@ -282,15 +282,19 @@
         <div class="row align-items-center">
           <div class="col-lg-6 wow fadeIn">
             <div class="text-content-block">
-              <h6>COLLABRATION WITH US</h6>
+              <h6>WHY CHOOSE US</h6>
               <h2>
-                Dedicated IT Solutions with<br />
-                25 Years Experience
+                Tailored building solutions with<br />
+                Years of Experience
               </h2>
               <p>
-                Entrepreneurs, artist, athletes and other individuals who have
-                excelled in their field share fun and inspiring stories from
-                their journey to success.
+                Choose YSL Builders for your construction needs because we offer
+                transparent, fast and organized services, utilizing modern
+                materials and technologies. We ensure every project is handled
+                with professionalism and personal attention. We pride ourselves
+                on delivering exceptional customer service and adhering to all
+                building regulations. Trust us to transform your vision into
+                reality with fair pricing and a commitment to excellence.
               </p>
               <figure><img src="images/iconset01.png" alt="Image" /></figure>
               <a href="#">CHECK FEATURES</a>
@@ -300,13 +304,13 @@
           <!-- end col-6 -->
           <div class="col-lg-3 col-md-6 wow fadeIn">
             <figure class="image-box" data-stellar-ratio="1.3">
-              <img src="images/intro-image01.jpg" alt="Image" />
+              <div id="lottie-animation"></div>
             </figure>
           </div>
           <!-- end col-3 -->
           <div class="col-lg-3 col-md-6 wow fadeIn">
             <figure class="image-box" data-stellar-ratio="1.1">
-              <img src="images/intro-image02.jpg" alt="Image" />
+              <img src="images/intro-image02.png" alt="Image" />
             </figure>
           </div>
           <!-- end col-3 -->
@@ -397,10 +401,10 @@
           <div class="col-12 wow fadeIn">
             <div class="title-block">
               <img src="images/title-icon.png" alt="Image" />
-              <h6>SOLUTIONS WE PROVIDE</h6>
+              <h6>SERVICES WE PROVIDE</h6>
               <h2>
-                Customer Based Digital Solutions <br />
-                for Your Company
+                Wide Range of Customized Services <br />
+                for all your Requirements
               </h2>
             </div>
             <!-- end title-block -->
@@ -409,9 +413,10 @@
           <div class="col-lg-3 col-md-4 wow fadeIn">
             <div class="icon-content-box">
               <figure><img src="images/icon01.png" alt="Image" /></figure>
-              <h5>IT Hardware</h5>
+              <h5>Extension & Basement</h5>
               <p>
-                Entrepreneurs, artist, athletes and other individuals who have
+                Expand your home with expertly crafted extensions and functional
+                basements.
               </p>
             </div>
             <!-- end icon-content-box -->
@@ -420,9 +425,10 @@
           <div class="col-lg-3 col-md-4 wow fadeIn">
             <div class="icon-content-box">
               <figure><img src="images/icon02.png" alt="Image" /></figure>
-              <h5>Support Desk</h5>
+              <h5>Loft Conversion</h5>
               <p>
-                Entrepreneurs, artist, athletes and other individuals who have
+                Transform your attic into a beautiful, usable space with our
+                loft conversions.
               </p>
             </div>
             <!-- end icon-content-box -->
@@ -431,9 +437,10 @@
           <div class="col-lg-3 col-md-4 wow fadeIn">
             <div class="icon-content-box">
               <figure><img src="images/icon03.png" alt="Image" /></figure>
-              <h5>Data Storage</h5>
+              <h5>Patios & Driveways</h5>
               <p>
-                Entrepreneurs, artist, athletes and other individuals who have
+                Enhance your property with custom-designed patios and durable
+                driveways.
               </p>
             </div>
             <!-- end icon-content-box -->
@@ -444,9 +451,10 @@
           <div class="col-lg-3 col-md-4 wow fadeIn">
             <div class="icon-content-box">
               <figure><img src="images/icon04.png" alt="Image" /></figure>
-              <h5>Software Dev</h5>
+              <h5>All Domestic & Commercial Building Work</h5>
               <p>
-                Entrepreneurs, artist, athletes and other individuals who have
+                Handle all your building needs, from minor repairs to major
+                renovations.
               </p>
             </div>
             <!-- end icon-content-box -->
@@ -455,9 +463,10 @@
           <div class="col-lg-3 col-md-4 wow fadeIn">
             <div class="icon-content-box">
               <figure><img src="images/icon05.png" alt="Image" /></figure>
-              <h5>Digital Security</h5>
+              <h5>Full House Refurbishment</h5>
               <p>
-                Entrepreneurs, artist, athletes and other individuals who have
+                Revitalize your home with comprehensive refurbishment services
+                for a modern update.
               </p>
             </div>
             <!-- end icon-content-box -->
@@ -550,10 +559,10 @@
       data-background="images/section-bg.jpg"
     >
       <div class="container wow fadeIn">
-        <h6>DIRECT CONSULTATION</h6>
+        <h6>CONNECT WITH US</h6>
         <h2>
-          The Bank of Iceland reaches <br />
-          a new crowd with
+          Delivering transparent, organized, and exceptional construction
+          services with guaranteed quality.
         </h2>
         <a href="#">GET A QUOTE</a>
       </div>
@@ -948,6 +957,13 @@
     <script src="js/wow.min.js"></script>
     <script src="js/scripts.js"></script>
     <script>
+      var animation = lottie.loadAnimation({
+        container: document.getElementById("lottie-animation"), // the container that will hold the animation
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "images/image1.json",
+      });
       document.addEventListener("scroll", function () {
         var scrollPercent =
           (window.scrollY / (document.body.offsetHeight - window.innerHeight)) *
