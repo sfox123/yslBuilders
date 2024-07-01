@@ -74,21 +74,27 @@ theme.
 @font-face {
   font-family: "Futura";
   src: url("../fonts/Futura-300.eot");
-  src: local("☺"), url("../fonts/Futura-300.woff") format("woff"), url("../fonts/Futura-300.ttf") format("truetype"), url("../fonts/Futura-300.svg") format("svg");
+  src: local("☺"), url("../fonts/Futura-300.woff") format("woff"),
+    url("../fonts/Futura-300.ttf") format("truetype"),
+    url("../fonts/Futura-300.svg") format("svg");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Futura";
   src: url("../fonts/Futura-400.eot");
-  src: local("☺"), url("../fonts/Futura-400.woff") format("woff"), url("../fonts/Futura-400.ttf") format("truetype"), url("../fonts/Futura-400.svg") format("svg");
+  src: local("☺"), url("../fonts/Futura-400.woff") format("woff"),
+    url("../fonts/Futura-400.ttf") format("truetype"),
+    url("../fonts/Futura-400.svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Futura";
   src: url("../fonts/Futura-700.eot");
-  src: local("☺"), url("../fonts/Futura-700.woff") format("woff"), url("../fonts/Futura-700.ttf") format("truetype"), url("../fonts/Futura-700.svg") format("svg");
+  src: local("☺"), url("../fonts/Futura-700.woff") format("woff"),
+    url("../fonts/Futura-700.ttf") format("truetype"),
+    url("../fonts/Futura-700.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
@@ -143,21 +149,21 @@ a:hover {
 }
 
 /* FORM ELEMENTS */
-input[type=text] {
+input[type="text"] {
   height: 62px;
   border: 1px solid #eaebee;
   padding: 0 20px;
   font-weight: 300;
 }
 
-input[type=email] {
+input[type="email"] {
   height: 62px;
   border: 1px solid #eaebee;
   padding: 0 20px;
   font-weight: 300;
 }
 
-input[type=search] {
+input[type="search"] {
   height: 62px;
   border: 1px solid #eaebee;
   padding: 0 20px;
@@ -170,7 +176,7 @@ textarea {
   padding: 20px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   height: 62px;
   padding: 0 40px;
   border: none;
@@ -180,7 +186,7 @@ input[type=submit] {
   font-weight: 700;
 }
 
-button[type=submit] {
+button[type="submit"] {
   height: 62px;
   padding: 0 40px;
   border: none;
@@ -205,6 +211,50 @@ button[type=submit] {
   .svg-background {
     display: none;
   }
+}
+
+.video-bg {
+  width: fit-content;
+}
+.video-bg h2 {
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+}
+
+.video-bg h2::before {
+  content: "";
+  position: absolute;
+  top: -10px; /* Adjust these values as needed */
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  backdrop-filter: blur(10px);
+  z-index: -1;
+}
+.video-bg h6 {
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+}
+
+.video-bg h6::before {
+  content: "";
+  position: absolute;
+  top: -10px; /* Adjust these values as needed */
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  backdrop-filter: blur(10px);
+
+  z-index: -1;
+}
+.video-link {
+  color: #490eea;
+  backdrop-filter: blur(10px);
+}
+.video-link:hover {
+  color: #2e2687;
 }
 
 /* Optionally, if you want to specifically target only mobile devices and not tablets, you can use a smaller breakpoint */
@@ -265,7 +315,6 @@ button[type=submit] {
 }
 
 @keyframes float {
-
   0%,
   100% {
     transform: translateY(0);
@@ -507,10 +556,10 @@ button[type=submit] {
   font-size: 21px;
   padding: 50px;
 }
-.accordion .card [aria-expanded=true] {
+.accordion .card [aria-expanded="true"] {
   color: #490eea !important;
 }
-.accordion .card [aria-expanded=true]:before {
+.accordion .card [aria-expanded="true"]:before {
   content: "-" !important;
   color: #490eea !important;
 }
@@ -588,11 +637,13 @@ button[type=submit] {
   line-height: 1;
 }
 
-.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-car .odometer-digit {
+.odometer.odometer-auto-theme .odometer-digit,
+.odometer.odometer-theme-car .odometer-digit {
   padding: 0;
 }
 
-.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-car .odometer-digit .odometer-digit-inner {
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner,
+.odometer.odometer-theme-car .odometer-digit .odometer-digit-inner {
   left: 0;
 }
 
@@ -1119,7 +1170,8 @@ button[type=submit] {
   right: 0;
   left: auto;
 }
-.hamburger span:before, .hamburger span:after {
+.hamburger span:before,
+.hamburger span:after {
   position: absolute;
   content: "";
   display: block;
@@ -1647,10 +1699,26 @@ button[type=submit] {
   left: 0;
   bottom: 0;
   z-index: 1;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #131314 100%);
-  background-image: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #131314 100%);
-  background-image: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #131314 100%);
-  background-image: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #131314 100%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    #131314 100%
+  );
+  background-image: -o-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    #131314 100%
+  );
+  background-image: -moz-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    #131314 100%
+  );
+  background-image: -webkit-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    #131314 100%
+  );
 }
 .carousel-slider .swiper-slide figure {
   width: 100%;
@@ -2414,7 +2482,7 @@ button[type=submit] {
   padding: 0;
   list-style: none;
   font-size: 13px;
-  color: #908C8C;
+  color: #908c8c;
 }
 .side-content ol li strong {
   color: #490eea;
@@ -2669,7 +2737,7 @@ button[type=submit] {
 .resume-form .form-group:last-child {
   margin-bottom: 0;
 }
-.resume-form .form-group input[type=text] {
+.resume-form .form-group input[type="text"] {
   width: 100%;
 }
 .resume-form .form-group textarea {
@@ -2690,7 +2758,7 @@ button[type=submit] {
   margin-top: 17px;
   margin-right: 10px;
 }
-.resume-form .form-group .file input[type=file] {
+.resume-form .form-group .file input[type="file"] {
   width: 84px;
   height: 48px;
   float: right;
@@ -2700,7 +2768,7 @@ button[type=submit] {
   position: relative;
   z-index: 2;
 }
-.resume-form .form-group .file input[type=text] {
+.resume-form .form-group .file input[type="text"] {
   width: 60%;
   height: 44px;
   margin: 4px 0;
@@ -2973,7 +3041,7 @@ button[type=submit] {
 .blog .sidebar .widget form {
   margin: 0;
 }
-.blog .sidebar .widget form input[type=search] {
+.blog .sidebar .widget form input[type="search"] {
   width: 100%;
   margin-bottom: 10px;
 }
@@ -3062,7 +3130,7 @@ button[type=submit] {
   top: -20px;
   font-weight: 600;
 }
-.contact-form #contact .form-group input[type=text] {
+.contact-form #contact .form-group input[type="text"] {
   background: none;
   position: relative;
   z-index: 2;
@@ -3093,7 +3161,8 @@ button[type=submit] {
   font-weight: 600;
   font-size: 13px;
 }
-.contact-form #success, .contact-form #error {
+.contact-form #success,
+.contact-form #error {
   display: none;
   float: left;
   width: 100%;
@@ -3167,7 +3236,7 @@ button[type=submit] {
   display: inline-block;
   margin-left: 20px;
 }
-.subscription-block .subscribe-box form input[type=email] {
+.subscription-block .subscribe-box form input[type="email"] {
   width: 400px;
   max-width: 100%;
   height: 56px;
@@ -3177,7 +3246,7 @@ button[type=submit] {
   margin-right: 20px;
   font-weight: 300;
 }
-.subscription-block .subscribe-box form input[type=submit] {
+.subscription-block .subscribe-box form input[type="submit"] {
   display: inline-block;
   height: 56px;
   line-height: 56px;
@@ -3190,7 +3259,7 @@ button[type=submit] {
   border-radius: 56px;
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.16);
 }
-.subscription-block .subscribe-box form input[type=submit]:hover {
+.subscription-block .subscribe-box form input[type="submit"]:hover {
   opacity: 0.9;
   text-decoration: none;
 }
@@ -3312,7 +3381,8 @@ button[type=submit] {
 }
 
 /* RESPONSIVE MEDIUM  FIXES */
-@media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
+@media only screen and (max-width: 1199px),
+  only screen and (max-device-width: 1199px) {
   .partners .inner ul li {
     padding: 30px 10px;
   }
@@ -3363,7 +3433,8 @@ button[type=submit] {
   }
 }
 /* RESPONSIVE TABLET FIXES */
-@media only screen and (max-width: 991px), only screen and (max-device-width: 991px) {
+@media only screen and (max-width: 991px),
+  only screen and (max-device-width: 991px) {
   .site-menu ul {
     display: none;
   }
@@ -3532,7 +3603,7 @@ button[type=submit] {
     padding: 40px 50px;
   }
 
-  .subscription-block .subscribe-box form input[type=email] {
+  .subscription-block .subscribe-box form input[type="email"] {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
@@ -3553,7 +3624,8 @@ button[type=submit] {
   }
 }
 /* RESPONSIVE MOBILE FIXES */
-@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+@media only screen and (max-width: 767px),
+  only screen and (max-device-width: 767px) {
   .header .container .inner small {
     padding-right: 10%;
   }
