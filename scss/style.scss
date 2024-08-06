@@ -11,7 +11,7 @@ theme.
 	// Table of contents //
 
 		01. CUSTOM FONTS
-		02. BODY
+		02. BODYFs
 		03. HTML TAGS
 		04. LINKS
 		05. FORM ELEMENTS
@@ -70,9 +70,8 @@ theme.
 
 
 */
-
-$color-blue: #490eea;
-$color-turquaz: #7ee6f8;
+$color-blue: #ea660e;
+$color-turquaz: rgb(190, 146, 71);
 $color-dark: #131314;
 
 @mixin font-render {
@@ -410,10 +409,10 @@ button[type="submit"] {
       padding: 50px;
     }
     [aria-expanded="true"] {
-      color: $color-blue !important;
+      background: #ea660e !important;
       &:before {
         content: "-" !important;
-        color: $color-blue !important;
+        background: #ea660e !important;
       }
     }
   }
@@ -1061,7 +1060,7 @@ button[type="submit"] {
     height: 56px;
     line-height: 56px;
     margin-top: 30px;
-    background: $color-blue;
+    background: #ea660e;
     color: #fff;
     padding: 0 40px;
     font-size: 13px;
@@ -1171,7 +1170,7 @@ button[type="submit"] {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background: $color-blue;
+  background: #ea660e;
   position: relative;
   @include transition-cubic;
   &:before {
@@ -1181,7 +1180,7 @@ button[type="submit"] {
     position: absolute;
     left: 0;
     top: 0;
-    background: url(../images/bg-wave.svg) top right no-repeat;
+    background: url(../images/header.png) top right no-repeat;
     background-size: 90% auto;
     z-index: 1;
     opacity: 0.1;
@@ -1620,7 +1619,7 @@ button[type="submit"] {
       line-height: 56px;
       margin-top: 30px;
       background: #fff;
-      color: $color-blue;
+      background: #ea660e;
       padding: 0 40px;
       font-size: 13px;
       font-weight: 700;
