@@ -41,6 +41,17 @@
   <link rel="stylesheet" href="css/swiper.min.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/fontawesome-pro.css">
+  <link rel="stylesheet" href="assets/css/icomoon.css">
+  <link rel="stylesheet" href="assets/css/spacing.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
 </head>
 
 <body>
@@ -54,47 +65,51 @@
       <small>LOADING</small>
     </div>
   </div>
-  <div class="page-transition">
-    <div class="layers"><span></span> <span></span> <span></span></div>
-  </div>
   <div class="site-navigation">
     <div class="layers"><span></span> <span></span> <span></span></div>
+    <!-- end layers -->
     <div class="inner">
       <ul>
         <li>
-          <a href="#">HOME</a>
+          <a href="index.html">HOME</a>
           <!-- <ul>
-                  <li><a href="index.html">Home Hamburger</a></li>
-                  <li><a href="index-menu.html">Home Menu</a></li>
-                </ul> -->
+                <li><a href="index.html">Home Hamburger</a></li>
+                <li><a href="index-menu.html">Home Menu</a></li>
+              </ul> -->
         </li>
-        <li>
+        <li onclick="clickEvent()">
           <a href="about_us_four.html">ABOUT</a>
         </li>
-        <li>
-          <a href="#">SERVICES</a><i class="fas fa-chevron-down"></i>
+        <li onclick="clickEvent()">
+          <a href="services.html">SERVICES</a><i class="fas fa-chevron-down"></i>
           <ul>
-            <li><a href="extension.html">Extension & Basement</a></li>
-            <li><a href="loft-conversion.html">Loft Conversion</a></li>
-            <li>
-              <a href="patios-and-driveways.html">Patios & Driveways</a>
+            <li onclick="clickEvent()"><a href="services.html#extension">Extension & Basement</a></li>
+            <li onclick="clickEvent()"><a href="services.html#loft">Loft Conversion</a></li>
+            <li onclick="clickEvent()">
+              <a href="services.html#patios">Patios & Driveways</a>
             </li>
-            <li>
-              <a href="domestic-and-combuilding.html">All Domestic & Commercial Building Work
-              </a>
+            <li onclick="clickEvent()">
+              <a href="services.html#domestic">All Domestic & Commercial Building Work</a>
             </li>
-            <li>
-              <a href="full-house-refurbishment.html">Full House Refurbishment</a>
+            <li onclick="clickEvent()">
+              <a href="services.html#refurbish">Full House Refurbishment</a>
             </li>
           </ul>
         </li>
-        <li>
+        <li onclick="clickEvent()">
           <a href="sus.html">SUSTAINABILITY</a>
         </li>
-        <li><a href="contact.html">CONTACT</a></li>
+        <li onclick="clickEvent()"><a href="contact.html">CONTACT</a></li>
       </ul>
     </div>
-    <div class="bottom"></div>
+    <!-- end inner -->
+    <div class="bottom">
+      <address>
+        <i class="fas fa-map-marker-alt"></i>15 Meadow Croft <br />
+        <strong>Hatfield AL10 0SG</strong>
+      </address>
+    </div>
+    <!-- end bottom -->
   </div>
   <nav class="navbar">
     <div class="container">
@@ -113,89 +128,188 @@
     <div class="container">
       <div class="inner">
         <small>About Us</small>
-        <h1>Our Story</h1>
+        <h1>who are we</h1>
       </div>
       <ul class="social-media">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">LinkedIn</a></li>
+        <li><a target="_blank" href="https://www.facebook.com/profile.php?id=61563989891321">Facebook</a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/company/ysl-builders-ltd/">Linked in</a></li>
         <li><a href="https://yslcivils.web.app/">YSL Civils</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </div>
   </header>
-  <section class="content-block">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9 wow fadeIn">
-          <h2>About YSL Builders</h2>
-          <p>
-            At YSL Builders, we are dedicated to providing top-notch construction services. With years of experience in
-            the industry, our team of professionals is committed to delivering quality workmanship and exceptional
-            customer service. Our mission is to transform your vision into reality, ensuring every project is completed
-            to the highest standards.
-          </p>
+
+
+  <section class="about-us-section section-space p-relative" style="background-color: white;">
+    <div class="shape-area">
+      <div class="shape-1" data-background="assets/imgs/bg/bg-shape-1.png"></div>
+      <div class="shape-2 quote-animation" data-background="assets/imgs/shapes/shape-7.png"></div>
+      <div class="shape-3 quote-animation" data-background="assets/imgs/shapes/shape-8.png"></div>
+    </div>
+    <div class="small-container">
+      <div class="row g-4">
+        <div class="col-xxl-6 col-xl-6 col-lg-6">
+          <!-- image area start -->
+          <div class="about-us-image-area p-relative wow fadeInRight" data-wow-delay=".5s">
+            <div class="border-shape" data-background="assets/imgs/shapes/shape-6.png"></div>
+            <figure class="image-1">
+              <img
+                src="https://i.ibb.co/27HT8rs/close-up-view-of-protective-hard-hats-that-laying-2023-11-27-05-32-43-utc.jpg"
+                alt="close-up-view-of-protective-hard-hats-that-laying-2023-11-27-05-32-43-utc" border="0">
+            </figure>
+            <div class="image-2-area">
+              <div class="image-2 p-relative">
+                <div class="play-btn">
+                  <div class="video_player_btn">
+                    <a href="https://www.youtube.com/watch?v=eEzD-Y97ges" class="popup-video">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="working-area float-bob-y">
+              <div class="inner p-relative">
+                <div class="icon-box">
+                  <i class="icon-prize"></i>
+                  <h4><span class="counter">YSL</span> Builders</h4>
+                  <p>Exceptional Working Experience</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- image area end -->
         </div>
-        <div class="col-12 wow fadeIn">
-          <h4>Our Values</h4>
-          <ol class="specs">
-            <li><b>✅</b> Integrity: We uphold the highest standards of integrity in all our actions.</li>
-            <li><b>✅</b> Quality: We provide outstanding products and unsurpassed service that deliver premium value to
-              our customers.</li>
-            <li><b>✅</b> Teamwork: We work together, across boundaries, to meet the needs of our customers and to help
-              our Company win.</li>
-            <li><b>✅</b> Respect for People: We value our people, encourage their development, and reward their
-              performance.</li>
-            <li><b>✅</b> Good Citizenship: We are good citizens in the communities in which we live and work.</li>
-            <li><b>✅</b> A Will to Win: We exhibit a strong will to win in the marketplace and in every aspect of our
-              business.</li>
-            <li><b>✅</b> Personal Accountability: We are personally accountable for delivering on our commitments.</li>
-          </ol>
-          <p>
-            Our team is passionate about construction and dedicated to providing the best possible service to our
-            clients. We believe in building lasting relationships based on trust, transparency, and mutual respect.
-          </p>
-        </div>
-        <div class="col-md-4 wow fadeIn">
-          <figure class="thumb">
-            <a href="https://i.ibb.co/h7s9xxt/IMG-7443.jpg" data-fancybox>
-              <img src="https://i.ibb.co/h7s9xxt/IMG-7443.jpg" alt="Team Image 1" border="0" />
-            </a>
-          </figure>
-        </div>
-        <div class="col-md-4 wow fadeIn">
-          <figure class="thumb">
-            <a href="https://i.ibb.co/VpYvfvh/IMG-7937.jpg" data-fancybox>
-              <img src="https://i.ibb.co/VpYvfvh/IMG-7937.jpg" alt="Team Image 2" border="0" />
-            </a>
-          </figure>
-        </div>
-        <div class="col-md-4 wow fadeIn">
-          <figure class="thumb">
-            <a href="https://i.ibb.co/yWBX6Qd/cdf092da-0d55-49bf-8749-d918f2222441.jpg" data-fancybox>
-              <img src="https://i.ibb.co/yWBX6Qd/cdf092da-0d55-49bf-8749-d918f2222441.jpg" alt="Team Image 3"
-                border="0" />
-            </a>
-          </figure>
+        <div class="col-xxl-6 col-xl-6 col-lg-6">
+          <!-- .content start -->
+          <div class="about-us-content-area p-relative z-1 pl-30">
+            <div class="title-box mb-35 wow fadeInLeft" data-wow-delay=".5s">
+              <span class="section-sub-title">About Us</span>
+              <h3 class="section-title mt-10">Devoted to Delivering Top Notch Building Solutions</h3>
+            </div>
+            <p class="mb-35 wow fadeInLeft" data-wow-delay=".5s">We are a premier building service company in the South
+              East, specializing in transforming residential and commercial
+              spaces with top-quality craftsmanship and exceptional customer service. We use modern materials and
+              technologies,
+              working with specialist contractors to ensure the highest standards. Every project, regardless of size, is
+              managed with
+              a professional yet personal approach for a seamless experience.</p>
+            <div class="icon-box mb-20 wow fadeInLeft" data-wow-delay=".8s">
+              <div class="icon">
+                <i class="icon-roof"></i>
+              </div>
+              <div class="content">
+                <h5><a href="about.html">Mission</a></h5>
+                <p>
+                  Our mission is to exceed client expectations with exceptional building services, innovative solutions,
+                  and a commitment
+                  to customer satisfaction. We focus on building lasting relationships through quality work and
+                  transparent communication.
+                </p>
+              </div>
+            </div>
+            <div class="icon-box mb-20 wow fadeInLeft" data-wow-delay=".9s">
+              <div class="icon">
+                <i class="icon-roof-9"></i>
+              </div>
+              <div class="content">
+                <h5><a href="about.html">Vision</a></h5>
+                <p>
+                  Our vision is to be the leading building service provider in the South East, known for integrity,
+                  quality, and
+                  innovation. We aim to set the industry standard for excellence and customer satisfaction, continually
+                  improving to meet
+                  evolving client and market needs.
+                </p>
+              </div>
+            </div>
+            <div class="about-btn-box wow fadeInLeft" data-wow-delay="1s">
+              <a class="primary-btn-1 btn-hover" href="contact.html">
+                Contact us &nbsp; | <i class="icon-right-arrow"></i>
+                <span style="top: 147.172px; left: 108.5px;"></span>
+              </a>
+            </div>
+          </div>
+          <!-- .content end -->
         </div>
       </div>
     </div>
   </section>
-  <section class="subscription-block">
-    <div class="container">
-      <div class="subscribe-box">
-        <div class="inner wow fadeIn">
-          <h2>Subscribe for Updates</h2>
-          <form>
-            <input type="email" placeholder="Type your e-mail address" />
-            <input type="submit" value="SUBSCRIBE NOW" />
-          </form>
+
+  <section class="work-process-section section-space p-relative" style="background-color: white;"
+    data-background="assets/imgs/bg/process-bg.png">
+    <div class="shape-1" data-background="assets/imgs/bg/line.png"></div>
+    <div class="small-container">
+      <div class="title-box text-center mb-60 wow fadeInLeft" data-wow-delay=".5s">
+        <span class="section-sub-title">Working Process</span>
+        <h3 class="section-title mt-10">Standard Work Process</h3>
+      </div>
+      <div class="row g-4">
+        <div class="col-xxl-4 col-xl-4 col-lg-4">
+          <div class="work-process-box text-center ">
+            <div class="icon-box p-relative">
+              <i class="icon-dollar-tag"></i>
+              <span>1</span>
+            </div>
+            <div class="content">
+              <h4 class="pt-25 pb-25">Planning & Cost Estimation </h4>
+              <p>We start by understanding client needs, conducting site analysis, and defining the project scope. After
+                detailed cost
+                estimation and budget approval, we finalize the contract and develop a project schedule to ensure timely
+                delivery.</p>
+            </div>
+          </div>
         </div>
+        <!-- block -->
+        <div class="col-xxl-4 col-xl-4 col-lg-4">
+          <div class="work-process-box text-center ">
+            <div class="icon-box p-relative">
+              <i class="icon-engineer"></i>
+              <span>2</span>
+            </div>
+            <div class="content">
+              <h4 class="pt-25 pb-25">Construction & Quality Management</h4>
+              <p>We prepare the site, manage construction, and ensure quality through regular inspections. Progress is
+                closely monitored
+                to maintain timelines and clear communication with stakeholders.</p>
+            </div>
+          </div>
+        </div>
+        <!-- block -->
+        <div class="col-xxl-4 col-xl-4 col-lg-4">
+          <div class="work-process-box text-center ">
+            <div class="icon-box p-relative">
+              <i class="icon-home"></i>
+              <span>3</span>
+            </div>
+            <div class="content">
+              <h4 class="pt-25 pb-25">Finishing & Project Handover</h4>
+              <p>Finalize finishing touches, perform a quality inspection, and conduct a client walkthrough. Provide
+                necessary
+                documentation, finalize payments, and close the project with client satisfaction.</p>
+            </div>
+          </div>
+        </div>
+        <!-- block -->
       </div>
     </div>
   </section>
+
+  <div style="background-color: white;" class="container-fluid g-0 fix">
+    <div style="display: block;" class="row">
+      <div class="col-xxl-12">
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4939.079955957351!2d-0.238258!3d51.759735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48763c7d9dc039c3%3A0xa45f5cf6cda8499c!2s15%20Meadow%20Croft%2C%20Hatfield%20AL10%200SG%2C%20UK!5e0!3m2!1sen!2slk!4v1723476928900!5m2!1sen!2slk"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 wow fadeIn">
+        <div class="col-lg-4 ">
           <figure>
             <a href="index.html"><img src="images/logo.png" alt="Image" /></a>
           </figure>
@@ -210,8 +324,8 @@
           </p>
         </div>
         <!-- end col-4 -->
-        <div class="col-lg-4 wow fadeIn">
-          <h3>EXPLORE</h3>
+        <div class="col-lg-4">
+          <h3 style="color: white;">EXPLORE</h3>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about_us_four.html">About</a></li>
@@ -219,40 +333,37 @@
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
           <ul>
-            <p class="pb-2">Our Services</p>
-            <li><a href="extension.html">Extension and Basement</a></li>
-            <li><a href="loft-conversion.html">Loft Conversion</a></li>
+            <h3 style="color: white; margin-top: -68px;">SERVICES</h3>
+            <li><a href="services.html">Extension and Basement</a></li>
+            <li><a href="services.html">Loft Conversion</a></li>
             <li>
-              <a href="patios-and-driveways.html">Patios and Driveways</a>
+              <a href="services.html">Patios and Driveways</a>
             </li>
             <li>
-              <a href="domestic-and-combuilding.html">All Domestic & Commercial Building Work
+              <a href="services.html">All Domestic & Commercial Building Work
               </a>
             </li>
             <li>
-              <a href="full-house-refurbishment.html">Full House Refurbishment</a>
+              <a href="services.html">Full House Refurbishment</a>
             </li>
           </ul>
         </div>
         <!-- end col-4 -->
 
-        <div class="col-lg-4 wow fadeIn pl-5">
-          <h3>REACH US</h3>
+        <div class="col-lg-4 pl-5">
+          <h3 style="color: white;">REACH US</h3>
           <address>
             15 Meadow Croft, <br />
             <strong>Hatfield AL10 0SG</strong>
           </address>
           <p class="pb-3">+44 7929 363732</p>
-          <a href="#">info@yslcivilsltd.co.uk</a>
+          <a href="#">info@yslbuilders.co.uk</a>
           <ol>
             <li>
-              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61563989891321"><i class="fab fa-facebook"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.linkedin.com/company/ysl-builders-ltd/"><i class="fab fa-linkedin-in"></i></a>
             </li>
           </ol>
         </div>
@@ -261,21 +372,63 @@
       <!-- end row -->
     </div>
     <!-- end container -->
-    <div class="bottom-bar wow fadeIn">
+    <div class="bottom-bar">
       <div class="container">
         <span>© 2024 YSL Builders | Domestic and Commercial. All Rights
           Reserved</span>
-        <b>Site created by
+        <b style="margin: 0 auto;">Site created by
           <a href="https://sharasolutions.co.uk/">Shara Solutions</a></b>
       </div>
       <!-- end container -->
     </div>
     <!-- end bottom-bar -->
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top">↑</button>
   </footer>
+  <!-- end footer -->
+
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    const clickEvent = () => {
+      var menu = document.querySelector('.nav-menu');
+      if (menu.classList.contains('show')) {
+        menu.classList.remove('show');
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
   <!-- end footer -->
   <!-- Include WOW.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
+  <script>
+    document.getElementById('hamburger-menu').onclick = function () {
+      var menu = document.querySelector('.nav-menu');
+      if (menu.classList.contains('show')) {
+        menu.classList.remove('show');
+      } else {
+        menu.classList.add('show');
+      }
+    };
+  </script>
   <!-- Include Stellar.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
 

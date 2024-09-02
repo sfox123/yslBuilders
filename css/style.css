@@ -1345,12 +1345,15 @@ button[type="submit"] {
 .navbar {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  padding: 30px 0;
-  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Position it at the top of the page */
   left: 0;
-  top: 0;
-  z-index: 5;
+  background-color: rgba(239, 143, 92, 0.9); /* Semi-transparent background */
+  z-index: 1000; /* Ensure it stays on top */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
 }
 .navbar .logo {
   margin-left: 0;
@@ -1363,8 +1366,9 @@ button[type="submit"] {
   height: 50px;
 }
 .navbar .hamburger-menu {
-  margin-right: 0;
-  margin-left: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 .navbar .hamburger-menu b {
   color: #fff;
@@ -1373,10 +1377,40 @@ button[type="submit"] {
   float: left;
   margin-right: 10px;
 }
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #000;
+}
 .navbar .hamburger-menu .hamburger {
   display: inline-block;
 }
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
 
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgba(47, 62, 224, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .nav-menu a {
+    margin: 10px 0;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+}
 /* HEADER */
 .header {
   width: 100%;
@@ -1759,6 +1793,7 @@ button[type="submit"] {
   font-weight: 700;
   font-size: 11px;
 }
+
 .carousel-slider .swiper-slide figure figcaption h3 {
   width: 100%;
   display: block;
@@ -1845,7 +1880,7 @@ button[type="submit"] {
   left: 0;
   top: 0;
   z-index: 0;
-  background: #ea660e;
+  /* background: #ea660e; */
   mix-blend-mode: lighten;
 }
 .bg-image .container {
@@ -1884,7 +1919,39 @@ button[type="submit"] {
   opacity: 0.9;
   text-decoration: none;
 }
+#back-to-top {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #007bff;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+}
 
+#back-to-top:hover {
+  background-color: #0056b3;
+  /* Add a dark-blue background on hover */
+}
 /* BG PATTERN */
 .bg-pattern {
   background: #ea660e;

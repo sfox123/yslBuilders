@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#490eea" />
+    <title>YSL Builders | Domestic & Commercial</title>
+    <meta name="author" content="Shara solutions" />
+    <meta name="description" content="YSL Builders | Domestic & Commercial" />
+    <meta name="keywords"
+        content="software, hardware, showcase, portfolio, partner, projects, modern, it, digital, studio, storage, animation, transition, backup" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+    <!-- SOCIAL MEDIA META -->
+    <meta property="og:description" content="YSL Builders | Domestic & Commercial" />
+    <meta property="og:image" content="http://www.themezinho.net/novos/preview.png" />
+    <meta property="og:site_name" content="novos" />
+    <meta property="og:title" content="ysl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.themezinho.net/novos" />
+
+    <!-- TWITTER META -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@novos" />
+    <meta name="twitter:creator" content="@novos" />
+    <meta name="twitter:title" content="novos" />
+    <meta name="twitter:description" content="Novos | IT Company and Digital Solutions" />
+    <meta name="twitter:image" content="http://www.themezinho.net/novos/preview.png" />
+
+    <!-- FAVICON FILES -->
+    <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144" />
+    <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114" />
+    <link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72" />
+    <link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon" />
+    <link href="ico/favicon.png" rel="shortcut icon" />
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/odometer.min.css" />
+    <link rel="stylesheet" href="css/fancybox.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .gallery__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        margin-top: 96px;
+    }
+
+    .gallery__item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery__item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery__item:hover img {
+        transform: scale(1.1);
+    }
+
+    .gallery__item .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .gallery__item:hover .overlay {
+        opacity: 1;
+    }
+
+    .overlay h3 {
+        margin: 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+        .gallery__container {
+            grid-template-columns: 1fr;
+            margin-top: 80px;
+        }
+    }
+</style>
+
+<body style="background-color: white;">
+    <div class="preloader">
+        <div class="layers"><span></span> <span></span> <span></span></div>
+        <!-- end layers -->
+        <div class="inner">
+            <figure><img src="images/logo-symbol.png" alt="Image" /></figure>
+            <div class="preloader-bar"><span></span></div>
+            <!-- end preloader-bar -->
+            <small>LOADING</small>
+        </div>
+        <!-- end inner -->
+    </div>
+    <!-- end preloader -->
+    <!-- end page-transition -->
+    <div class="site-navigation">
+        <div class="layers"><span></span> <span></span> <span></span></div>
+        <!-- end layers -->
+        <div class="inner">
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="about_us_four.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="services.html">SERVICES</a>
+                    <i class="fas fa-chevron-down"></i>
+                    <ul>
+                        <li><a href="services.html#extension">Extension & Basement</a></li>
+                        <li><a href="services.html#loft">Loft Conversion</a></li>
+                        <li><a href="services.html#patios">Patios & Driveways</a></li>
+                        <li><a href="services.html#domestic">All Domestic & Commercial Building Work</a></li>
+                        <li><a href="services.html#refurbish">Full House Refurbishment</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sus.html">SUSTAINABILITY</a>
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- end inner -->
+        <div class="bottom">
+            <address>
+                <i class="fas fa-map-marker-alt"></i>15 Meadow Croft <br />
+                <strong>Hatfield AL10 0SG</strong>
+            </address>
+        </div>
+        <!-- end bottom -->
+    </div>
+    <!-- end site-navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Image" /></a>
+            </div>
+            <!-- end logo -->
+            <div class="hamburger-menu">
+                <b>MENU</b>
+                <div class="hamburger" id="hamburger-menu">
+                    <span></span> <span></span> <span></span>
+                </div>
+            </div>
+            <!-- end hamburger-menu -->
+        </div>
+        <!-- end container -->
+    </nav>
+    <!-- end navbar -->
+
+    <!-- end header -->
+
+    <div class="gallery__container" style="background-color: white;">
+        <!-- Dynamic Image Loading -->
+        <div class="gallery__item">
+            <img src="https://i.ibb.co/ZGd6XxL/IMG-1825.jpg" alt="Gallery Image 1" />
+            <div class="overlay">
+                <h3>Project Title 1</h3>
+            </div>
+        </div>
+        <div class="gallery__item">
+            <img src="https://i.ibb.co/hLWpMFH/IMG-1763.jpg" alt="Gallery Image 2" />
+            <div class="overlay">
+                <h3>Project Title 2</h3>
+            </div>
+        </div>
+        <div class="gallery__item">
+            <img src="https://i.ibb.co/yhmssGb/IMG-0108.jpg" alt="Gallery Image 3" />
+            <div class="overlay">
+                <h3>Project Title 3</h3>
+            </div>
+        </div>
+        <div class="gallery__item">
+            <img src="https://i.ibb.co/9ZjjpNm/IMG-0137.jpg" alt="Gallery Image 4" />
+            <div class="overlay">
+                <h3>Project Title 4</h3>
+            </div>
+        </div>
+        <div class="gallery__item">
+            <img src="https://i.ibb.co/q9Z2XYv/IMG-3965.jpg" alt="Gallery Image 5" />
+            <div class="overlay">
+                <h3>Project Title 5</h3>
+            </div>
+        </div>
+        <div class="gallery__item">
+            <img src="https://i.ibb.co/hYdxNx4/dji-fly-20240508-091944-0055-1715285426092-photo.jpg"
+                alt="Gallery Image 6" />
+            <div class="overlay">
+                <h3>Project Title 6</h3>
+            </div>
+        </div>
+        <div class="gallery__item">
+            <img src="https://i.ibb.co/NFNv1FW/dji-fly-20240508-091500-0040-1715285482384-photo-1.jpg"
+                alt="Gallery Image 7" />
+            <div class="overlay">
+                <h3>Project Title 7</h3>
+            </div>
+        </div>
+        <div class="gallery__item">
+            <img src="https://i.ibb.co/SyXfTkL/IMG-4170-1.jpg" alt="Gallery Image 8" />
+            <div class="overlay">
+                <h3>Project Title 8</h3>
+            </div>
+        </div>
+        <div class="gallery__item">
+            <img src="https://i.ibb.co/cDswbKy/IMG-9534.jpg" alt="Gallery Image 9" />
+            <div class="overlay">
+                <h3>Project Title 9</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 ">
+                    <figure>
+                        <a href="index.html"><img src="images/logo.png" alt="Image" /></a>
+                    </figure>
+                    <p class="text-justify">
+                        Choose YSL Builders for your construction needs because we offer
+                        transparent, fast and organized services, utilizing modern
+                        materials and technologies. We ensure every project is handled
+                        with professionalism and personal attention. We pride ourselves on
+                        delivering exceptional customer service and adhering to all
+                        building regulations. Trust us to transform your vision into
+                        reality with fair pricing and a commitment to excellence.
+                    </p>
+                </div>
+                <!-- end col-4 -->
+                <div class="col-lg-4">
+                    <h3 style="color: white;">EXPLORE</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about_us_four.html">About</a></li>
+                        <li><a href="sus.html">Sustainability</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <ul>
+                        <h3 style="color: white; margin-top: -68px;">SERVICES</h3>
+                        <li><a href="services.html">Extension and Basement</a></li>
+                        <li><a href="services.html">Loft Conversion</a></li>
+                        <li>
+                            <a href="services.html">Patios and Driveways</a>
+                        </li>
+                        <li>
+                            <a href="services.html">All Domestic & Commercial Building Work
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html">Full House Refurbishment</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end col-4 -->
+
+                <div class="col-lg-4 pl-5">
+                    <h3 style="color: white;">REACH US</h3>
+                    <address>
+                        15 Meadow Croft, <br />
+                        <strong>Hatfield AL10 0SG</strong>
+                    </address>
+                    <p class="pb-3">+44 7929 363732</p>
+                    <a href="#">info@yslbuilders.co.uk</a>
+                    <ol>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=61563989891321"><i
+                                    class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/ysl-builders-ltd/"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </li>
+                    </ol>
+                </div>
+                <!-- end col-4 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+        <div class="bottom-bar">
+            <div class="container">
+                <span>© 2024 YSL Builders | Domestic and Commercial. All Rights
+                    Reserved</span>
+                <b>Site created by
+                    <a href="https://sharasolutions.co.uk/">Shara Solutions</a></b>
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end bottom-bar -->
+
+        <!-- Back to Top Button -->
+        <button id="back-to-top" title="Back to Top">↑</button>
+    </footer>
+    <!-- end footer -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var hamburgerMenu = document.getElementById('hamburger-menu');
+            if (hamburgerMenu) {
+                hamburgerMenu.onclick = function () {
+                    var menu = document.querySelector('.nav-menu');
+                    if (menu.classList.contains('show')) {
+                        menu.classList.remove('show');
+                    } else {
+                        menu.classList.add('show');
+                    }
+                };
+            }
+        });
+    </script>
+
+    <script>
+        document.getElementById('hamburger-menu').onclick = function () {
+            var menu = document.querySelector('.nav-menu');
+            if (menu.classList.contains('show')) {
+                menu.classList.remove('show');
+            } else {
+                menu.classList.add('show');
+            }
+        };
+    </script>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+    <!-- end footer -->
+
+    <!-- JS FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/fancybox.min.js"></script>
+    <script src="js/odometer.min.js"></script>
+    <script src="js/jquery.stellar.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -45,22 +45,8 @@
 </head>
 
 <body>
-  <div class="preloader">
-    <div class="layers"><span></span> <span></span> <span></span></div>
-    <!-- end layers -->
-    <div class="inner">
-      <figure><img src="images/logo-symbol.png" alt="Image" /></figure>
-      <div class="preloader-bar"><span></span></div>
-      <!-- end preloader-bar -->
-      <small>LOADING</small>
-    </div>
-    <!-- end inner -->
-  </div>
+
   <!-- end preloader -->
-  <div class="page-transition">
-    <div class="layers"><span></span> <span></span> <span></span></div>
-    <!-- end layers -->
-  </div>
   <!-- end page-transition -->
   <div class="site-navigation">
     <div class="layers"><span></span> <span></span> <span></span></div>
@@ -68,35 +54,35 @@
     <div class="inner">
       <ul>
         <li>
-          <a href="#">HOME</a>
+          <a href="index.html">HOME</a>
           <!-- <ul>
               <li><a href="index.html">Home Hamburger</a></li>
               <li><a href="index-menu.html">Home Menu</a></li>
             </ul> -->
         </li>
-        <li>
+        <li onclick="clickEvent()">
           <a href="about_us_four.html">ABOUT</a>
         </li>
-        <li>
-          <a href="#">SERVICES</a><i class="fas fa-chevron-down"></i>
+        <li onclick="clickEvent()">
+          <a href="services.html">SERVICES</a><i class="fas fa-chevron-down"></i>
           <ul>
-            <li><a href="extension.html">Extension & Basement</a></li>
-            <li><a href="loft-conversion.html">Loft Conversion</a></li>
-            <li>
-              <a href="patios-and-driveways.html">Patios & Driveways</a>
+            <li onclick="clickEvent()"><a href="services.html#extension">Extension & Basement</a></li>
+            <li onclick="clickEvent()"><a href="services.html#loft">Loft Conversion</a></li>
+            <li onclick="clickEvent()">
+              <a href="services.html#patios">Patios & Driveways</a>
             </li>
-            <li>
-              <a href="domestic-and-combuilding.html">All Domestic & Commercial Building Work</a>
+            <li onclick="clickEvent()">
+              <a href="services.html#domestic">All Domestic & Commercial Building Work</a>
             </li>
-            <li>
-              <a href="full-house-refurbishment.html">Full House Refurbishment</a>
+            <li onclick="clickEvent()">
+              <a href="services.html#refurbish">Full House Refurbishment</a>
             </li>
           </ul>
         </li>
-        <li>
+        <li onclick="clickEvent()">
           <a href="sus.html">SUSTAINABILITY</a>
         </li>
-        <li><a href="contact.html">CONTACT</a></li>
+        <li onclick="clickEvent()"><a href="contact.html">CONTACT</a></li>
       </ul>
     </div>
     <!-- end inner -->
@@ -138,9 +124,10 @@
       </div>
       <!-- end inner -->
       <ul class="social-media">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Linked in</a></li>
+        <li><a target="_blank" href="https://www.facebook.com/profile.php?id=61563989891321">Facebook</a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/company/ysl-builders-ltd/">Linked in</a></li>
         <li><a href="https://yslcivils.web.app/">YSL Civils</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
       </ul>
       <!-- end social-media -->
     </div>
@@ -206,7 +193,7 @@
               reality with fair pricing and a commitment to excellence.
             </p>
             <figure><img src="images/iconset01.png" alt="Image" /></figure>
-            <a href="#">CHECK FEATURES</a>
+            <a href="about_us_four.html">CHECK FEATURES</a>
           </div>
           <!-- end text-content-block -->
         </div>
@@ -337,7 +324,7 @@
         Delivering transparent, organized, and exceptional construction
         services with guaranteed quality.
       </h2>
-      <a class="video-link" href="#">GET A QUOTE</a>
+      <a class="video-link" href="contact.html">GET A QUOTE</a>
     </div>
     <!-- end container -->
   </section>
@@ -372,7 +359,7 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 wow fadeIn">
+        <div class="col-lg-4 ">
           <figure>
             <a href="index.html"><img src="images/logo.png" alt="Image" /></a>
           </figure>
@@ -387,8 +374,8 @@
           </p>
         </div>
         <!-- end col-4 -->
-        <div class="col-lg-4 wow fadeIn">
-          <h3>EXPLORE</h3>
+        <div class="col-lg-4">
+          <h3 style="color: white;">EXPLORE</h3>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about_us_four.html">About</a></li>
@@ -396,40 +383,37 @@
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
           <ul>
-            <p class="pb-2">Our Services</p>
-            <li><a href="extension.html">Extension and Basement</a></li>
-            <li><a href="loft-conversion.html">Loft Conversion</a></li>
+            <h3 style="color: white; margin-top: -68px;">SERVICES</h3>
+            <li><a href="services.html">Extension and Basement</a></li>
+            <li><a href="services.html">Loft Conversion</a></li>
             <li>
-              <a href="patios-and-driveways.html">Patios and Driveways</a>
+              <a href="services.html">Patios and Driveways</a>
             </li>
             <li>
-              <a href="domestic-and-combuilding.html">All Domestic & Commercial Building Work
+              <a href="services.html">All Domestic & Commercial Building Work
               </a>
             </li>
             <li>
-              <a href="full-house-refurbishment.html">Full House Refurbishment</a>
+              <a href="services.html">Full House Refurbishment</a>
             </li>
           </ul>
         </div>
         <!-- end col-4 -->
 
-        <div class="col-lg-4 wow fadeIn pl-5">
-          <h3>REACH US</h3>
+        <div class="col-lg-4 pl-5">
+          <h3 style="color: white;">REACH US</h3>
           <address>
             15 Meadow Croft, <br />
             <strong>Hatfield AL10 0SG</strong>
           </address>
           <p class="pb-3">+44 7929 363732</p>
-          <a href="#">info@yslcivilsltd.co.uk</a>
+          <a href="#">info@yslbuilders.co.uk</a>
           <ol>
             <li>
-              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61563989891321"><i class="fab fa-facebook"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.linkedin.com/company/ysl-builders-ltd/"><i class="fab fa-linkedin-in"></i></a>
             </li>
           </ol>
         </div>
@@ -438,7 +422,7 @@
       <!-- end row -->
     </div>
     <!-- end container -->
-    <div class="bottom-bar wow fadeIn">
+    <div class="bottom-bar">
       <div class="container">
         <span>© 2024 YSL Builders | Domestic and Commercial. All Rights
           Reserved</span>
@@ -448,7 +432,66 @@
       <!-- end container -->
     </div>
     <!-- end bottom-bar -->
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top">↑</button>
   </footer>
+  <!-- end footer -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var hamburgerMenu = document.getElementById('hamburger-menu');
+      if (hamburgerMenu) {
+        hamburgerMenu.onclick = function () {
+          var menu = document.querySelector('.nav-menu');
+          if (menu.classList.contains('show')) {
+            menu.classList.remove('show');
+          } else {
+            menu.classList.add('show');
+          }
+        };
+      }
+    });
+
+    const clickEvent = () => {
+      var menu = document.querySelector('.nav-menu');
+      if (menu.classList.contains('show')) {
+        menu.classList.remove('show');
+      }
+    }
+  </script>
+  <script>
+    document.getElementById('hamburger-menu').onclick = function () {
+      var menu = document.querySelector('.nav-menu');
+      if (menu.classList.contains('show')) {
+        menu.classList.remove('show');
+      } else {
+        menu.classList.add('show');
+      }
+    };
+  </script>
+
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
   <!-- end footer -->
 
   <!-- JS FILES -->
