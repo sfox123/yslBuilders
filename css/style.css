@@ -1351,7 +1351,7 @@ button[type="submit"] {
   position: fixed; /* Make the navbar fixed */
   top: 0; /* Position it at the top of the page */
   left: 0;
-  background-color: rgba(239, 143, 92, 0.9); /* Semi-transparent background */
+  background-color: rgba(234, 102, 14, 0.9); /* Semi-transparent background */
   z-index: 1000; /* Ensure it stays on top */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
 }
@@ -1419,7 +1419,7 @@ button[type="submit"] {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background: linear-gradient(135deg, #2c3e50, #fd746c);
+  background: linear-gradient(135deg, #173b45, #b43f3f);
   position: relative;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -3327,9 +3327,10 @@ button[type="submit"] {
   display: inline-block;
   height: 56px;
   line-height: 56px;
-  background: #7ee6f8;
+  background: white;
   color: #ea660e;
   border: none;
+  letter-spacing: 1px;
   padding: 0 40px;
   font-size: 13px;
   font-weight: 700;
@@ -3347,7 +3348,7 @@ button[type="submit"] {
   display: flex;
   flex-wrap: wrap;
   padding-top: 150px;
-  background: url(../images/world-map.png) center no-repeat #131314;
+  background: url(../images/world-map.png) center no-repeat #173b45;
   background-size: auto 90%;
   color: #fff;
   position: relative;

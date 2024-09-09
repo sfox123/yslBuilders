@@ -24,6 +24,26 @@
       });
     });
 
+    // Transform navbar from transparent to solid color
+    window.addEventListener("scroll", () => {
+      const navbar = document.querySelector(".navbar");
+      const backToTop = document.querySelector(".back-to-top-btn");
+
+      if (window.scrollY > 500) {
+        // Change '50' to the desired scroll position
+        navbar.classList.add("navbar-scrolled");
+      } else {
+        navbar.classList.remove("navbar-scrolled");
+      }
+
+      if (window.scrollY > 6000) {
+        // Change '50' to the desired scroll position
+        backToTop.classList.add("back-to-top-btn-scrolled");
+      } else {
+        backToTop.classList.remove("back-to-top-btn-scrolled");
+      }
+    });
+
     // HAMBURGER MENU
     $(".hamburger").on("click", function (e) {
       if ($(".site-navigation").hasClass("active")) {
