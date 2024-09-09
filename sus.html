@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="theme-color" content="#490eea" />
     <title>YSL Builders | Sustainability</title>
     <meta name="author" content="Shara solutions" />
     <meta name="description" content="YSL Builders | Sustainability" />
-    <meta name="keywords" content="construction, builders, sustainability, green environment, eco-friendly, services" />
+    <meta
+      name="keywords"
+      content="construction, builders, sustainability, green environment, eco-friendly, services" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
 
     <!-- FAVICON FILES -->
-    <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144" />
-    <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114" />
-    <link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72" />
-    <link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon" />
+    <link
+      href="ico/apple-touch-icon-144-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="144x144" />
+    <link
+      href="ico/apple-touch-icon-114-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="114x114" />
+    <link
+      href="ico/apple-touch-icon-72-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="72x72" />
+    <link
+      href="ico/apple-touch-icon-57-precomposed.png"
+      rel="apple-touch-icon" />
     <link href="ico/favicon.png" rel="shortcut icon" />
 
     <!-- CSS FILES -->
@@ -25,457 +39,526 @@
     <link rel="stylesheet" href="css/fancybox.min.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="scss/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <!-- Custom Styles -->
     <style>
-        /* Styling the header */
-        .page-header {
-            padding: 60px 0;
-            background-color: #e5f8e0;
-            color: #2c6e49;
-        }
+      /* Styling the header */
+      .header {
+        background: linear-gradient(135deg, #173b45, #2c6e49) !important;
+      }
 
-        .page-header h1 {
-            font-size: 2.5em;
-            font-weight: bold;
-        }
+      .page-header {
+        padding: 60px 0;
+        background: linear-gradient(135deg, #173b45, #2c6e49) !important;
+        color: #2c6e49;
+      }
 
-        .page-header small {
-            font-size: 1.2em;
-            color: #4c9c76;
-        }
+      .page-header::after {
+        border-color: transparent #173b45 transparent transparent;
+      }
 
-        /* Centering content */
-        .content-block {
-            background-color: #f5f5f5;
-            padding: 60px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+      .page-header h1 {
+        font-size: 2.5em;
+        font-weight: bold;
+      }
 
-        .content-block .container {
-            max-width: 900px;
-            text-align: left;
-        }
+      .page-header small {
+        font-size: 1.2em;
+        color: #4c9c76;
+      }
 
-        .content-block h2 {
-            color: #2c6e49;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
+      /* Centering content */
+      .content-block {
+        background-color: #f5f5f5;
+        padding: 60px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-        .content-block p,
-        .content-block li {
-            font-size: 1.1em;
-            line-height: 1.8em;
-            color: #555;
-        }
+      .content-block .container {
+        max-width: 900px;
+        text-align: left;
+      }
 
-        .content-block h4 {
-            margin-top: 30px;
-            font-size: 1.5em;
-            color: #4c9c76;
-        }
+      .content-block h2 {
+        color: #2c6e49;
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
 
-        .content-block ol.specs li {
-            margin-bottom: 10px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-        }
+      .content-block p,
+      .content-block li {
+        font-size: 1.1em;
+        line-height: 1.8em;
+        color: #555;
+      }
 
-        .content-block ol.specs li b {
-            margin-right: 10px;
-            color: #2c6e49;
-        }
+      .content-block h4 {
+        margin-top: 30px;
+        font-size: 1.5em;
+        color: #4c9c76;
+      }
 
-        .content-block ol.specs li:before {
-            content: '🌱';
-            margin-right: 10px;
-            font-size: 1.2em;
-        }
+      .content-block ol.specs li {
+        margin-bottom: 10px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
 
-        /* Styling footer */
-        .footer {
-            padding: 40px 0;
-            background-color: #2c6e49;
-            color: #fff;
-        }
+      .content-block ol.specs li b {
+        margin-right: 10px;
+        color: #2c6e49;
+      }
 
-        .footer h3 {
-            color: #fff;
-        }
+      .content-block ol.specs li:before {
+        content: "🌱";
+        margin-right: 10px;
+        font-size: 1.2em;
+      }
 
-        .footer address,
-        .footer p,
-        .footer a {
-            color: #ccc;
-        }
+      /* Styling footer */
+      .footer {
+        background-color: #2c6e49;
+        color: #fff;
+      }
 
-        .footer ul {
-            list-style: none;
-            padding: 0;
-        }
+      .footer::before {
+        border-color: transparent #173b45 transparent transparent;
+      }
 
-        .footer ul li {
-            margin-bottom: 10px;
-        }
+      .footer h3 {
+        color: #fff;
+      }
 
-        .footer ul li a {
-            color: #ccc;
-        }
+      .footer address,
+      .footer p,
+      .footer a {
+        color: #ccc;
+      }
 
-        .footer ul li a:hover {
-            color: #fff;
-        }
+      .footer ul {
+        list-style: none;
+        padding: 0;
+      }
 
-        /* Bottom bar styling */
-        .bottom-bar {
-            padding: 20px 0;
-            background-color: #222;
-            color: #888;
-        }
+      .footer ul li {
+        margin-bottom: 10px;
+      }
 
-        .bottom-bar a {
-            color: #888;
-        }
+      .footer ul li a {
+        color: #ccc;
+      }
 
-        .bottom-bar a:hover {
-            color: #fff;
-        }
+      .footer ul li a:hover {
+        color: #fff;
+      }
 
-        /* Additional Styling */
-        .lottie-animation {
-            margin-top: 40px;
-            text-align: center;
-        }
+      /* Bottom bar styling */
+      .bottom-bar {
+        padding: 20px 0;
+        background-color: #1a4c33;
+        color: #fff;
+      }
 
-        .subscribe-box {
-            background-color: #4c9c76;
-            padding: 40px;
-            border-radius: 8px;
-            text-align: center;
-            color: #fff;
-            margin-top: 50px;
-        }
+      .bottom-bar a {
+        color: #888;
+      }
 
-        .subscribe-box input[type="email"] {
-            padding: 10px;
-            border-radius: 4px;
-            border: none;
-            width: 80%;
-            margin-bottom: 10px;
-        }
+      .bottom-bar a:hover {
+        color: #fff;
+      }
 
-        .subscribe-box input[type="submit"] {
-            padding: 10px 20px;
-            border-radius: 4px;
-            border: none;
-            background-color: #2c6e49;
-            color: #fff;
-            font-weight: bold;
-            cursor: pointer;
-        }
+      /* Additional Styling */
+      .lottie-animation {
+        margin-top: 40px;
+        text-align: center;
+      }
 
-        .subscribe-box input[type="submit"]:hover {
-            background-color: #1a4c33;
-        }
+      .subscribe-box {
+        background-color: #4c9c76;
+        padding: 40px;
+        border-radius: 8px;
+        text-align: center;
+        color: #fff;
+        margin-top: 50px;
+      }
 
-        @media (max-width: 768px) {
-            .heading {
-                font-size: 52px !important;
-                /* Change this to your desired font size for mobile view */
-            }
+      .subscribe-box input[type="email"] {
+        padding: 10px;
+        border-radius: 4px;
+        border: none;
+        width: 80%;
+        margin-bottom: 10px;
+      }
+
+      .subscribe-box input[type="submit"] {
+        padding: 10px 20px;
+        border-radius: 4px;
+        border: none;
+        background-color: #2c6e49;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .subscribe-box input[type="submit"]:hover {
+        background-color: #1a4c33;
+      }
+
+      @media (max-width: 768px) {
+        .heading {
+          font-size: 52px !important;
+          /* Change this to your desired font size for mobile view */
         }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="site-navigation">
-        <div class="layers"><span></span> <span></span> <span></span></div>
-        <!-- end layers -->
-        <div class="inner">
-            <ul>
-                <li>
-                    <a href="index.html">HOME</a>
-                    <!-- <ul>
+      <div class="layers"><span></span> <span></span> <span></span></div>
+      <!-- end layers -->
+      <div class="inner">
+        <ul>
+          <li>
+            <a href="index.html">HOME</a>
+            <!-- <ul>
               <li><a href="index.html">Home Hamburger</a></li>
               <li><a href="index-menu.html">Home Menu</a></li>
             </ul> -->
-                </li>
-                <li onclick="clickEvent()">
-                    <a href="about_us_four.html">ABOUT</a>
-                </li>
-                <li onclick="clickEvent()">
-                    <a href="services.html">SERVICES</a><i class="fas fa-chevron-down"></i>
-                    <ul>
-                        <li onclick="clickEvent()"><a href="services.html#extension">Extension & Basement</a></li>
-                        <li onclick="clickEvent()"><a href="services.html#loft">Loft Conversion</a></li>
-                        <li onclick="clickEvent()">
-                            <a href="services.html#patios">Patios & Driveways</a>
-                        </li>
-                        <li onclick="clickEvent()">
-                            <a href="services.html#domestic">All Domestic & Commercial Building Work</a>
-                        </li>
-                        <li onclick="clickEvent()">
-                            <a href="services.html#refurbish">Full House Refurbishment</a>
-                        </li>
-                    </ul>
-                </li>
-                <li onclick="clickEvent()">
-                    <a href="sus.html">SUSTAINABILITY</a>
-                </li>
-                <li onclick="clickEvent()"><a href="contact.html">CONTACT</a></li>
+          </li>
+          <li onclick="clickEvent()">
+            <a href="about_us_four.html">ABOUT</a>
+          </li>
+          <li onclick="clickEvent()">
+            <a href="services.html">SERVICES</a
+            ><i class="fas fa-chevron-down"></i>
+            <ul>
+              <li onclick="clickEvent()">
+                <a href="services.html#extension">Extension & Basement</a>
+              </li>
+              <li onclick="clickEvent()">
+                <a href="services.html#loft">Loft Conversion</a>
+              </li>
+              <li onclick="clickEvent()">
+                <a href="services.html#patios">Patios & Driveways</a>
+              </li>
+              <li onclick="clickEvent()">
+                <a href="services.html#domestic"
+                  >All Domestic & Commercial Building Work</a
+                >
+              </li>
+              <li onclick="clickEvent()">
+                <a href="services.html#refurbish">Full House Refurbishment</a>
+              </li>
             </ul>
-        </div>
-        <!-- end inner -->
-        <div class="bottom">
-            <address>
-                <i class="fas fa-map-marker-alt"></i>15 Meadow Croft <br />
-                <strong>Hatfield AL10 0SG</strong>
-            </address>
-        </div>
-        <!-- end bottom -->
+          </li>
+          <li onclick="clickEvent()">
+            <a href="sus.html">SUSTAINABILITY</a>
+          </li>
+          <li onclick="clickEvent()"><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <!-- end inner -->
+      <div class="bottom">
+        <address>
+          <i class="fas fa-map-marker-alt"></i>15 Meadow Croft <br />
+          <strong>Hatfield AL10 0SG</strong>
+        </address>
+      </div>
+      <!-- end bottom -->
     </div>
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Image" /></a>
-            </div>
-            <div class="hamburger-menu">
-                <b>MENU</b>
-                <div class="hamburger" id="hamburger-menu">
-                    <span></span> <span></span> <span></span>
-                </div>
-            </div>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="Image" /></a>
         </div>
+        <div class="hamburger-menu">
+          <b>MENU</b>
+          <div class="hamburger" id="hamburger-menu">
+            <span></span> <span></span> <span></span>
+          </div>
+        </div>
+      </div>
     </nav>
     <header class="page-header">
-        <div class="container">
-            <div class="inner">
-                <small>core values</small>
-                <h1 class="heading">Sustainability</h1>
-            </div>
-            <ul class="social-media">
-                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=61563989891321">Facebook</a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/company/ysl-builders-ltd/">Linked in</a></li>
-                <li><a href="https://yslcivils.web.app/">YSL Civils</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
+      <div class="container">
+        <div class="inner">
+          <small>core values</small>
+          <h1 class="heading">Sustainability</h1>
         </div>
+        <ul class="social-media">
+          <li>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=61563989891321"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/ysl-builders-ltd/"
+              >Linked in</a
+            >
+          </li>
+          <li><a href="https://yslcivils.web.app/">YSL Civils</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
     </header>
-    <section style="background-color: white;" class="content-block">
-        <div class="container">
-            <h2>Sustainability at YSL Builders</h2>
-            <p>
-                Environmental consciousness is at the heart of our operations. We are committed to reducing our
-                environmental footprint across all our projects while maintaining our reputation for delivering
-                high-quality reliable services. Sustainability is woven into every aspect of our business ensuring
-                compliance with regulatory requirements. By partnering closely with our clients, we ensure that our
-                methods are both efficient and environmentally friendly.
-            </p>
+    <section style="background-color: white" class="content-block">
+      <div class="container">
+        <h2>Sustainability at YSL Builders</h2>
+        <p>
+          Environmental consciousness is at the heart of our operations. We are
+          committed to reducing our environmental footprint across all our
+          projects while maintaining our reputation for delivering high-quality
+          reliable services. Sustainability is woven into every aspect of our
+          business ensuring compliance with regulatory requirements. By
+          partnering closely with our clients, we ensure that our methods are
+          both efficient and environmentally friendly.
+        </p>
 
-            <h4>Environmental Stewardship</h4>
-            <p>
-                Our dedication to environmental stewardship drives us to minimize our impact on air, water, land, and
-                communities while enhancing biodiversity and preserving cultural heritage. We have implemented an
-                Environmental Management System certified to ISO 14001:2015, which guides us in assessing all our
-                projects with a focus on reducing, reusing, and recycling to minimize waste.
-            </p>
+        <h4>Environmental Stewardship</h4>
+        <p>
+          Our dedication to environmental stewardship drives us to minimize our
+          impact on air, water, land, and communities while enhancing
+          biodiversity and preserving cultural heritage. We have implemented an
+          Environmental Management System certified to ISO 14001:2015, which
+          guides us in assessing all our projects with a focus on reducing,
+          reusing, and recycling to minimize waste.
+        </p>
 
-            <h4>Resource Efficiency</h4>
-            <p>
-                We prioritize the sustainable use of natural resources and advocate for the transition to a circular
-                economy. This means conserving water, reducing waste through smart design, and maximizing the reuse and
-                recovery of materials. We utilize recycled and secondary materials from other industries, making them
-                integral to our products and fuels. Remarkably, we consume more waste than we produce, underscoring our
-                commitment to resource efficiency.
-            </p>
+        <h4>Resource Efficiency</h4>
+        <p>
+          We prioritize the sustainable use of natural resources and advocate
+          for the transition to a circular economy. This means conserving water,
+          reducing waste through smart design, and maximizing the reuse and
+          recovery of materials. We utilize recycled and secondary materials
+          from other industries, making them integral to our products and fuels.
+          Remarkably, we consume more waste than we produce, underscoring our
+          commitment to resource efficiency.
+        </p>
 
-            <h4>Recycling and Use of Recycled Materials</h4>
-            <p>
-                Our approach to waste management is proactive and innovative, with a strong emphasis on recycling and
-                reusing. Sending waste to landfill is a last resort; instead, we aim to recycle 98% of all waste
-                generated. In our concrete mixing and aggregate production, we use top-quality recycled materials from
-                our own sites. Our asphalt production adheres to the Waste and Resources Action Programme (WRAP)
-                standards, ensuring minimal environmental impact. We collaborate with our contacts and contracts to
-                repurpose materials, and when reuse is not possible, we segregate and recycle appropriately.
-            </p>
+        <h4>Recycling and Use of Recycled Materials</h4>
+        <p>
+          Our approach to waste management is proactive and innovative, with a
+          strong emphasis on recycling and reusing. Sending waste to landfill is
+          a last resort; instead, we aim to recycle 98% of all waste generated.
+          In our concrete mixing and aggregate production, we use top-quality
+          recycled materials from our own sites. Our asphalt production adheres
+          to the Waste and Resources Action Programme (WRAP) standards, ensuring
+          minimal environmental impact. We collaborate with our contacts and
+          contracts to repurpose materials, and when reuse is not possible, we
+          segregate and recycle appropriately.
+        </p>
 
-            <h4>Climate Change and Energy Management</h4>
-            <p>
-                Recognizing our industry’s significant impact on natural resources, we take a holistic approach to
-                managing energy and greenhouse gas emissions throughout the lifecycle of our operations. This
-                encompasses material selection, operational processes, product transportation, performance during use,
-                and end-of-life recycling or disposal. Our investments in energy-efficient technologies, waste-derived
-                fuels, renewable energy sources, and responsible supply chain management are pivotal in reducing our
-                carbon footprint.
-            </p>
+        <h4>Climate Change and Energy Management</h4>
+        <p>
+          Recognizing our industry’s significant impact on natural resources, we
+          take a holistic approach to managing energy and greenhouse gas
+          emissions throughout the lifecycle of our operations. This encompasses
+          material selection, operational processes, product transportation,
+          performance during use, and end-of-life recycling or disposal. Our
+          investments in energy-efficient technologies, waste-derived fuels,
+          renewable energy sources, and responsible supply chain management are
+          pivotal in reducing our carbon footprint.
+        </p>
 
-            <h4>Sustainable Procurement</h4>
-            <p>
-                Adhering to a "Sustainable Green Procurement Policy" and the Mayor of London’s code for Green
-                Procurement, we prioritize purchasing recyclable and environmentally friendly products that meet
-                required standards and are financially viable. Our staff is guided by Sustainable Green Procurement
-                principles to ensure sustainable purchasing decisions.
-            </p>
+        <h4>Sustainable Procurement</h4>
+        <p>
+          Adhering to a "Sustainable Green Procurement Policy" and the Mayor of
+          London’s code for Green Procurement, we prioritize purchasing
+          recyclable and environmentally friendly products that meet required
+          standards and are financially viable. Our staff is guided by
+          Sustainable Green Procurement principles to ensure sustainable
+          purchasing decisions.
+        </p>
 
-            <h4>Fleet & Transport</h4>
-            <p>
-                To mitigate pollutant emissions such as Nitrous Oxides (NOx) and Particulate Matter (PM10), our entire
-                diesel fleet is equipped with Adblue, an additive that reduces emissions through selective catalytic
-                reduction. All our Light Goods Vehicles (LGVs) and plant equipment operate on Ultra Low Sulphur Diesel
-                (ULSD).
-            </p>
+        <h4>Fleet & Transport</h4>
+        <p>
+          To mitigate pollutant emissions such as Nitrous Oxides (NOx) and
+          Particulate Matter (PM10), our entire diesel fleet is equipped with
+          Adblue, an additive that reduces emissions through selective catalytic
+          reduction. All our Light Goods Vehicles (LGVs) and plant equipment
+          operate on Ultra Low Sulphur Diesel (ULSD).
+        </p>
 
-            <h4>Visual Impact</h4>
-            <p>
-                We are committed to minimizing the visual impact of our construction activities on the local
-                environment. By limiting on-site storage of construction materials and transporting them only as needed,
-                we strive to maintain a clean and unobtrusive worksite.
-            </p>
+        <h4>Visual Impact</h4>
+        <p>
+          We are committed to minimizing the visual impact of our construction
+          activities on the local environment. By limiting on-site storage of
+          construction materials and transporting them only as needed, we strive
+          to maintain a clean and unobtrusive worksite.
+        </p>
 
-            <h4>Public Impact</h4>
-            <p>
-                Transparency and communication are key to our operations. We keep local residents and businesses
-                informed about our work programs, providing advance notifications of upcoming activities and explaining
-                the measures we take to minimize disruptions.
-            </p>
+        <h4>Public Impact</h4>
+        <p>
+          Transparency and communication are key to our operations. We keep
+          local residents and businesses informed about our work programs,
+          providing advance notifications of upcoming activities and explaining
+          the measures we take to minimize disruptions.
+        </p>
 
-            <h2>Our Commitment to a Greener Tomorrow</h2>
-            <p>
-                At YSL Builders Ltd, we are passionate about fostering a greener tomorrow through responsible
-                environmental practices. By integrating sustainability into every facet of our operations, we not only
-                protect our planet but also ensure the longevity and success of our business and the communities we
-                serve.
-            </p>
+        <h2>Our Commitment to a Greener Tomorrow</h2>
+        <p>
+          At YSL Builders Ltd, we are passionate about fostering a greener
+          tomorrow through responsible environmental practices. By integrating
+          sustainability into every facet of our operations, we not only protect
+          our planet but also ensure the longevity and success of our business
+          and the communities we serve.
+        </p>
 
-            <section class="lottie-animation">
-                <div style="display: flex; justify-items: center; justify-content: center; align-items: center;"
-                    class="container text-center">
-                    <div id="lottie-eco-recycle" style="width: 300px; height: 300px;"></div>
-                </div>
-            </section>
-        </div>
+        <section class="lottie-animation">
+          <div
+            style="
+              display: flex;
+              justify-items: center;
+              justify-content: center;
+              align-items: center;
+            "
+            class="container text-center">
+            <div
+              id="lottie-eco-recycle"
+              style="width: 300px; height: 300px"></div>
+          </div>
+        </section>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 ">
-                    <figure>
-                        <a href="index.html"><img src="images/logo.png" alt="Image" /></a>
-                    </figure>
-                    <p class="text-justify">
-                        Choose YSL Builders for your construction needs because we offer
-                        transparent, fast and organized services, utilizing modern
-                        materials and technologies. We ensure every project is handled
-                        with professionalism and personal attention. We pride ourselves on
-                        delivering exceptional customer service and adhering to all
-                        building regulations. Trust us to transform your vision into
-                        reality with fair pricing and a commitment to excellence.
-                    </p>
-                </div>
-                <!-- end col-4 -->
-                <div class="col-lg-4">
-                    <h3 style="color: white;">EXPLORE</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about_us_four.html">About</a></li>
-                        <li><a href="sus.html">Sustainability</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                    <ul>
-                        <h3 style="color: white; margin-top: -68px;">SERVICES</h3>
-                        <li><a href="services.html">Extension and Basement</a></li>
-                        <li><a href="services.html">Loft Conversion</a></li>
-                        <li>
-                            <a href="services.html">Patios and Driveways</a>
-                        </li>
-                        <li>
-                            <a href="services.html">All Domestic & Commercial Building Work
-                            </a>
-                        </li>
-                        <li>
-                            <a href="services.html">Full House Refurbishment</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- end col-4 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <figure>
+              <a href="index.html"><img src="images/logo.png" alt="Image" /></a>
+            </figure>
+            <p class="text-justify">
+              Choose YSL Builders for your construction needs because we offer
+              transparent, fast and organized services, utilizing modern
+              materials and technologies. We ensure every project is handled
+              with professionalism and personal attention. We pride ourselves on
+              delivering exceptional customer service and adhering to all
+              building regulations. Trust us to transform your vision into
+              reality with fair pricing and a commitment to excellence.
+            </p>
+          </div>
+          <!-- end col-4 -->
+          <div class="col-lg-4">
+            <h3 style="color: white">EXPLORE</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about_us_four.html">About</a></li>
+              <li><a href="sus.html">Sustainability</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <ul>
+              <h3 style="color: white; margin-top: -68px">SERVICES</h3>
+              <li><a href="services.html">Extension and Basement</a></li>
+              <li><a href="services.html">Loft Conversion</a></li>
+              <li>
+                <a href="services.html">Patios and Driveways</a>
+              </li>
+              <li>
+                <a href="services.html"
+                  >All Domestic & Commercial Building Work
+                </a>
+              </li>
+              <li>
+                <a href="services.html">Full House Refurbishment</a>
+              </li>
+            </ul>
+          </div>
+          <!-- end col-4 -->
 
-                <div class="col-lg-4 pl-5">
-                    <h3 style="color: white;">REACH US</h3>
-                    <address>
-                        15 Meadow Croft, <br />
-                        <strong>Hatfield AL10 0SG</strong>
-                    </address>
-                    <p class="pb-3">+44 7929 363732</p>
-                    <a href="#">info@yslbuilders.co.uk</a>
-                    <ol>
-                        <li>
-                            <a href="https://www.facebook.com/profile.php?id=61563989891321"><i
-                                    class="fab fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/ysl-builders-ltd/"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </li>
-                    </ol>
-                </div>
-                <!-- end col-4 -->
-            </div>
-            <!-- end row -->
+          <div class="col-lg-4 pl-5">
+            <h3 style="color: white">REACH US</h3>
+            <address>
+              15 Meadow Croft, <br />
+              <strong>Hatfield AL10 0SG</strong>
+            </address>
+            <p class="pb-3">+44 7929 363732</p>
+            <a href="#">info@yslbuilders.co.uk</a>
+            <ol>
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61563989891321"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/ysl-builders-ltd/"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ol>
+          </div>
+          <!-- end col-4 -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+      <div class="bottom-bar">
+        <div class="container">
+          <span
+            >© 2024 YSL Builders | Domestic and Commercial. All Rights
+            Reserved</span
+          >
+          <b style="margin: 0 auto"
+            >Site created by
+            <a href="https://sharasolutions.co.uk/">Shara Solutions</a></b
+          >
         </div>
         <!-- end container -->
-        <div class="bottom-bar">
-            <div class="container">
-                <span>© 2024 YSL Builders | Domestic and Commercial. All Rights
-                    Reserved</span>
-                <b style="margin: 0 auto;">Site created by
-                    <a href="https://sharasolutions.co.uk/">Shara Solutions</a></b>
-            </div>
-            <!-- end container -->
-        </div>
-        <!-- end bottom-bar -->
+      </div>
+      <!-- end bottom-bar -->
 
-        <!-- Back to Top Button -->
-        <button id="back-to-top" title="Back to Top">↑</button>
+      <!-- Back to Top Button -->
+      <button id="back-to-top" class="back-to-top-btn" title="Back to Top">
+        <span class="material-symbols-outlined"> keyboard_arrow_up </span>
+      </button>
     </footer>
     <!-- end footer -->
 
     <script>
-        // Get the button
-        let mybutton = document.getElementById("back-to-top");
+      // Get the button
+      let mybutton = document.getElementById("back-to-top");
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-            scrollFunction();
-        };
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
         }
+      }
 
-        // When the user clicks on the button, scroll to the top of the document
-        mybutton.onclick = function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        };
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
     </script>
     <script>
-
-        const clickEvent = () => {
-            var menu = document.querySelector('.nav-menu');
-            if (menu.classList.contains('show')) {
-                menu.classList.remove('show');
-            }
+      const clickEvent = () => {
+        var menu = document.querySelector(".nav-menu");
+        if (menu.classList.contains("show")) {
+          menu.classList.remove("show");
         }
+      };
     </script>
     <!-- end footer -->
     <!-- Include WOW.js -->
@@ -492,24 +575,23 @@
     <script src="js/odometer.min.js"></script>
     <script src="js/scripts.js"></script>
     <script>
-        document.getElementById('hamburger-menu').onclick = function () {
-            var menu = document.querySelector('.nav-menu');
-            if (menu.classList.contains('show')) {
-                menu.classList.remove('show');
-            } else {
-                menu.classList.add('show');
-            }
-        };
+      document.getElementById("hamburger-menu").onclick = function () {
+        var menu = document.querySelector(".nav-menu");
+        if (menu.classList.contains("show")) {
+          menu.classList.remove("show");
+        } else {
+          menu.classList.add("show");
+        }
+      };
     </script>
     <script>
-        var animation = bodymovin.loadAnimation({
-            container: document.getElementById('lottie-eco-recycle'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: 'images/eco-recycle.json' // Update this path to the correct location of your eco-recycle.json file
-        });
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById("lottie-eco-recycle"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "images/eco-recycle.json", // Update this path to the correct location of your eco-recycle.json file
+      });
     </script>
-</body>
-
+  </body>
 </html>

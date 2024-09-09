@@ -70,9 +70,14 @@ theme.
 
 
 */
-$color-blue: #ea660e;
-$color-turquaz: rgb(190, 146, 71);
+$color-white: #f8eded;
+$color-orange: #ff8225;
+$color-red: #b43f3f;
+$color-dark-blue: #173b45;
+// $color-dark-blue: rgb(190, 146, 71);
 $color-dark: #131314;
+
+$blue-to-red-gradient: linear-gradient(135deg, #173b45, #b43f3f);
 
 @mixin font-render {
   -webkit-font-smoothing: antialiased;
@@ -152,6 +157,26 @@ body {
 img {
   max-width: 100%;
 }
+
+.button {
+  height: 56px;
+  margin-top: 50px;
+  background: $color-orange;
+  color: $color-white;
+  padding: 16px 40px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  border-radius: 56px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.16);
+  transition-delay: 1.4s;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.9;
+    text-decoration: none;
+  }
+}
+
 address {
   width: 100%;
   display: block;
@@ -160,7 +185,7 @@ address {
   i {
     width: 100%;
     font-size: 40px;
-    color: $color-blue;
+    color: $color-orange;
     margin-bottom: 20px;
   }
 }
@@ -203,7 +228,7 @@ input[type="submit"] {
   height: 62px;
   padding: 0 40px;
   border: none;
-  background: $color-blue;
+  background: $color-orange;
   color: #fff;
   font-size: 14px;
   font-weight: 700;
@@ -212,7 +237,7 @@ button[type="submit"] {
   height: 62px;
   padding: 0 40px;
   border: none;
-  background: $color-blue;
+  background: $color-orange;
   color: #fff;
   font-size: 14px;
   font-weight: 700;
@@ -391,11 +416,11 @@ button[type="submit"] {
           width: 20px;
           float: left;
           margin-right: 8px;
-          color: $color-blue;
+          color: $color-orange;
           font-weight: 600;
         }
         &:hover {
-          color: $color-blue;
+          color: $color-orange;
           text-decoration: none;
         }
       }
@@ -429,7 +454,7 @@ button[type="submit"] {
   .page-item {
     display: inline-block;
     &.active .page-link {
-      background: $color-blue;
+      background: $color-orange;
       color: #fff;
     }
     .page-link {
@@ -445,7 +470,7 @@ button[type="submit"] {
         margin: 0 5px;
       }
       &:hover {
-        background: $color-blue;
+        background: $color-orange;
         color: #fff;
       }
     }
@@ -504,7 +529,7 @@ button[type="submit"] {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  background: $color-turquaz;
+  background: $color-dark-blue;
   position: fixed;
   left: 0;
   bottom: -100%;
@@ -581,7 +606,7 @@ button[type="submit"] {
       height: 0;
       position: absolute;
       bottom: 0;
-      background: $color-turquaz;
+      background: $color-dark-blue;
       &:nth-child(1) {
         left: 0;
         transition-delay: 0.25s;
@@ -643,7 +668,7 @@ button[type="submit"] {
   position: fixed;
   left: 0;
   bottom: -100%;
-  background: $color-turquaz;
+  background: $color-red;
   z-index: 4;
   @include transition-cubic;
   transition-delay: 0.1s;
@@ -663,7 +688,7 @@ button[type="submit"] {
       height: 0;
       position: absolute;
       bottom: 0;
-      background: $color-dark;
+      background: linear-gradient(180deg, #173b45, #b43f3f);
       &:nth-child(1) {
         left: 0;
         transition-delay: 0.25s;
@@ -738,7 +763,7 @@ button[type="submit"] {
               white-space: nowrap;
               font-size: 17px;
               &:hover {
-                color: $color-turquaz;
+                color: $color-orange;
               }
             }
           }
@@ -755,7 +780,7 @@ button[type="submit"] {
           font-size: 30px;
           font-weight: 700;
           &:hover {
-            color: $color-turquaz;
+            color: $color-orange;
             text-decoration: none;
           }
         }
@@ -851,7 +876,7 @@ button[type="submit"] {
         border-top: 1px solid transparent;
         &:hover {
           text-decoration: none;
-          color: $color-turquaz;
+          color: $color-dark-blue;
         }
       }
     }
@@ -902,8 +927,8 @@ button[type="submit"] {
   font-size: 22px;
   @include transition;
   &:hover {
-    background: $color-blue;
-    color: $color-turquaz;
+    background: $color-orange;
+    color: $color-dark-blue;
   }
 }
 .swiper-button-next {
@@ -916,8 +941,8 @@ button[type="submit"] {
   font-size: 22px;
   @include transition;
   &:hover {
-    background: $color-blue;
-    color: $color-turquaz;
+    background: $color-orange;
+    color: $color-dark-blue;
   }
 }
 
@@ -945,7 +970,7 @@ button[type="submit"] {
     left: 0;
     width: 100%;
     height: 2px;
-    background: $color-turquaz;
+    background: $color-white;
     z-index: 0;
     &:nth-child(1) {
       top: 0px;
@@ -979,7 +1004,7 @@ button[type="submit"] {
     }
     &:after {
       z-index: 2;
-      background: $color-turquaz;
+      background: $color-dark-blue;
       transition: all 0.15s linear 0.3s;
     }
     &:nth-child(2):before {
@@ -1026,7 +1051,7 @@ button[type="submit"] {
     width: 100%;
     display: block;
     font-weight: 400;
-    color: $color-blue;
+    color: $color-orange;
     margin-bottom: 10px;
     letter-spacing: 1px;
     font-size: 13px;
@@ -1081,7 +1106,7 @@ button[type="submit"] {
   flex-wrap: wrap;
   margin-bottom: 80px;
   img {
-    height: 15px;
+    height: 100px;
     display: inline-block;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -1090,7 +1115,7 @@ button[type="submit"] {
     width: 100%;
     display: block;
     text-transform: uppercase;
-    color: $color-blue;
+    color: $color-orange;
     font-size: 13px;
     letter-spacing: 1px;
     margin-bottom: 20px;
@@ -1117,7 +1142,7 @@ button[type="submit"] {
       height: 0;
       border-style: solid;
       border-width: 20px 120vw 20px 0;
-      border-color: transparent $color-turquaz transparent transparent;
+      border-color: transparent $color-dark-blue transparent transparent;
       position: absolute;
       left: -20vw;
       top: -20px;
@@ -1126,16 +1151,28 @@ button[type="submit"] {
   }
 }
 
+.navbar-scrolled {
+  background: rgba(
+    $color: $color-dark-blue,
+    $alpha: 0.9
+  ); /* Background color when scrolled */
+}
+
+.back-to-top-btn-scrolled {
+  display: block !important;
+}
+
 /* NAVBAR */
 .navbar {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 30px 0;
-  position: absolute;
+  padding: 16px 0;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 5;
+  transition: all ease-in-out 0.5s;
   .logo {
     margin-left: 0;
     margin-right: auto;
@@ -1170,7 +1207,7 @@ button[type="submit"] {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background: #ea660e;
+  background: linear-gradient(135deg, #173b45, #b43f3f);
   position: relative;
   @include transition-cubic;
   &:before {
@@ -1191,7 +1228,7 @@ button[type="submit"] {
     height: 0;
     border-style: solid;
     border-width: 20px 120vw 20px 0;
-    border-color: transparent $color-turquaz transparent transparent;
+    border-color: transparent $color-dark-blue transparent transparent;
     position: absolute;
     left: -20vw;
     bottom: -20px;
@@ -1242,14 +1279,14 @@ button[type="submit"] {
         transition-delay: 1.1s;
         b {
           font-weight: 400;
-          color: $color-turquaz;
+          color: $color-orange;
           border-bottom: 1px solid #fff;
           padding-bottom: 8px;
         }
       }
       h1 {
         font-size: 6vw;
-        color: #fff;
+        color: $color-white;
         font-weight: 700;
         margin-bottom: 40px;
         transform: translateY(50px);
@@ -1258,7 +1295,7 @@ button[type="submit"] {
         &:after {
           content: ".";
           font-size: 80px;
-          color: $color-turquaz;
+          color: $color-white;
           line-height: 1;
         }
       }
@@ -1267,11 +1304,12 @@ button[type="submit"] {
         height: 56px;
         line-height: 56px;
         margin-top: 30px;
-        background: $color-turquaz;
-        color: $color-blue;
+        background: $color-white;
+        color: $color-dark-blue;
         padding: 0 40px;
         font-size: 13px;
         font-weight: 700;
+        letter-spacing: 0.8px;
         border-radius: 56px;
         box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.16);
         transform: translateY(50px);
@@ -1294,7 +1332,7 @@ button[type="submit"] {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background: $color-blue;
+  background: linear-gradient(135deg, #173b45, #b43f3f);
   position: relative;
   @include transition-cubic;
   &:before {
@@ -1315,7 +1353,7 @@ button[type="submit"] {
     height: 0;
     border-style: solid;
     border-width: 20px 120vw 20px 0;
-    border-color: transparent $color-turquaz transparent transparent;
+    border-color: transparent $color-red transparent transparent;
     position: absolute;
     left: -20vw;
     bottom: -20px;
@@ -1366,7 +1404,7 @@ button[type="submit"] {
         transition-delay: 1.1s;
         b {
           font-weight: 400;
-          color: $color-turquaz;
+          color: $color-dark-blue;
           border-bottom: 1px solid #fff;
           padding-bottom: 8px;
         }
@@ -1583,7 +1621,7 @@ button[type="submit"] {
 .bg-image {
   background-size: cover;
   background-attachment: fixed;
-  color: #fff;
+  color: $color-dark-blue;
   &:after {
     content: "";
     width: 100%;
@@ -1592,7 +1630,7 @@ button[type="submit"] {
     left: 0;
     top: 0;
     z-index: 0;
-    background: $color-blue;
+    background: $color-white;
     mix-blend-mode: lighten;
   }
   .container {
@@ -1605,6 +1643,10 @@ button[type="submit"] {
       margin-bottom: 10px;
       letter-spacing: 1px;
       font-size: 13px;
+      color: $color-dark-blue;
+    }
+    h3 {
+      color: $color-dark-blue;
     }
     h2 {
       width: 100%;
@@ -1612,6 +1654,7 @@ button[type="submit"] {
       margin-bottom: 20px;
       font-weight: 700;
       font-size: 60px;
+      color: $color-dark-blue;
     }
     a {
       display: inline-block;
@@ -1635,7 +1678,7 @@ button[type="submit"] {
 
 /* BG PATTERN */
 .bg-pattern {
-  background: $color-blue;
+  background: $color-orange;
   &:before {
     content: "";
     width: 100%;
@@ -1815,7 +1858,7 @@ button[type="submit"] {
   .button {
     width: 25px;
     height: 25px;
-    background: $color-blue;
+    background: $color-orange;
     position: absolute;
     left: 0;
     top: 0;
@@ -1828,7 +1871,7 @@ button[type="submit"] {
     float: left;
     margin-right: 15px;
     position: relative;
-    background: $color-turquaz;
+    background: $color-dark-blue;
     border-radius: 25px;
     &.switch {
       background: #8564de;
@@ -1887,7 +1930,7 @@ button[type="submit"] {
     display: inline-block;
     height: 56px;
     line-height: 56px;
-    background: $color-blue;
+    background: $color-orange;
     color: #fff;
     padding: 0 40px;
     font-size: 13px;
@@ -1946,7 +1989,7 @@ button[type="submit"] {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background: $color-turquaz;
+  background: $color-dark-blue;
   .location-map {
     width: 50%;
     position: relative;
@@ -1957,8 +2000,8 @@ button[type="submit"] {
       position: absolute;
       right: -25px;
       top: 25px;
-      background: $color-blue;
-      color: $color-turquaz;
+      background: $color-orange;
+      color: $color-dark-blue;
       text-align: center;
     }
     iframe {
@@ -1996,7 +2039,7 @@ button[type="submit"] {
     display: block;
     margin-bottom: 0;
     position: relative;
-    background: $color-blue;
+    background: $color-orange;
     * {
       @include transition;
     }
@@ -2058,7 +2101,7 @@ button[type="submit"] {
   margin-left: 70px;
   padding: 40px 30px;
   text-align: center;
-  background: $color-blue;
+  background: $color-orange;
   color: #fff;
   position: -webkit-sticky !important;
   position: sticky !important;
@@ -2073,7 +2116,7 @@ button[type="submit"] {
     display: block;
     margin-bottom: 20px;
     font-size: 70px;
-    color: $color-turquaz;
+    color: $color-dark-blue;
     margin: 20px 0;
   }
   p {
@@ -2095,7 +2138,7 @@ button[type="submit"] {
     width: 100%;
     display: block;
     margin-bottom: 30px;
-    background: $color-blue;
+    background: $color-orange;
     color: #fff;
     padding: 30px;
     h4 {
@@ -2117,7 +2160,7 @@ button[type="submit"] {
       display: block;
       margin-bottom: 20px;
       font-size: 70px;
-      color: $color-turquaz;
+      color: $color-dark-blue;
       margin: 20px 0;
     }
     a {
@@ -2142,26 +2185,26 @@ button[type="submit"] {
           border-bottom: none;
         }
         &.active {
-          background: $color-turquaz;
+          background: $color-dark-blue;
           border-bottom: none;
           &:before {
             content: "";
             width: 35px;
             height: 100%;
-            background: $color-turquaz;
+            background: $color-dark-blue;
             position: absolute;
             left: -35px;
             top: 0;
           }
           a {
-            color: $color-blue;
+            color: $color-orange;
           }
         }
         a {
           color: #fff;
           font-size: 18px;
           &:hover {
-            color: $color-turquaz;
+            color: $color-dark-blue;
             text-decoration: none;
           }
         }
@@ -2205,7 +2248,7 @@ button[type="submit"] {
           @include transition;
         }
         .progress-bar {
-          background: $color-turquaz;
+          background: $color-dark-blue;
           width: 0;
           &.animated {
             width: 80%;
@@ -2228,7 +2271,7 @@ button[type="submit"] {
       font-size: 13px;
       color: #908c8c;
       strong {
-        color: $color-blue;
+        color: $color-orange;
       }
     }
   }
@@ -2245,7 +2288,7 @@ button[type="submit"] {
     }
   }
   blockquote {
-    background: $color-turquaz;
+    background: $color-dark-blue;
     padding: 30px;
     font-size: 19px;
     line-height: 1.6;
@@ -2262,7 +2305,7 @@ button[type="submit"] {
     margin-top: 10px;
   }
   strong {
-    color: $color-blue;
+    color: $color-orange;
   }
   p {
     line-height: 1.6;
@@ -2341,7 +2384,7 @@ button[type="submit"] {
   }
   h6 {
     font-weight: 700;
-    color: $color-blue;
+    color: $color-orange;
   }
   p {
     line-height: 1.7;
@@ -2426,8 +2469,8 @@ button[type="submit"] {
     border-bottom: 1px solid #eee;
     &:first-child {
       font-weight: 600;
-      color: $color-turquaz;
-      background: $color-blue;
+      color: $color-dark-blue;
+      background: $color-orange;
     }
     &:last-child {
       border-bottom: none;
@@ -2451,13 +2494,13 @@ button[type="submit"] {
         height: 40px;
         line-height: 40px;
         display: inline-block;
-        background: $color-blue;
+        background: $color-orange;
         color: #fff;
         padding: 0 20px;
         font-weight: 600;
         font-size: 12px;
         &:hover {
-          background: $color-blue;
+          background: $color-orange;
           text-decoration: none;
         }
       }
@@ -2485,6 +2528,7 @@ button[type="submit"] {
     }
     input[type="text"] {
       width: 100%;
+      border-radius: 15px;
     }
     textarea {
       width: 100%;
@@ -2527,7 +2571,7 @@ button[type="submit"] {
         right: 7px;
         top: 7px;
         color: #fff;
-        background: $color-blue;
+        background: $color-orange;
         font-size: 12px;
         font-weight: 600;
         padding: 0 15px;
@@ -2609,7 +2653,7 @@ button[type="submit"] {
             line-height: 1;
             padding: 3px 6px;
             &:hover {
-              background: $color-blue;
+              background: $color-orange;
               text-decoration: none;
             }
           }
@@ -2666,7 +2710,7 @@ button[type="submit"] {
         margin: 30px 0;
       }
       blockquote {
-        background: $color-turquaz;
+        background: $color-dark-blue;
         padding: 30px;
         font-size: 19px;
         line-height: 1.6;
@@ -2697,7 +2741,7 @@ button[type="submit"] {
         a {
           color: $color-dark;
           &:hover {
-            color: $color-blue;
+            color: $color-orange;
             text-decoration: none;
           }
         }
@@ -2732,7 +2776,7 @@ button[type="submit"] {
           a {
             margin: 0;
             &:hover {
-              color: $color-blue;
+              color: $color-orange;
               text-decoration: none;
             }
           }
@@ -2755,13 +2799,13 @@ button[type="submit"] {
           list-style: none;
           a {
             color: #fff;
-            background: $color-blue;
+            background: $color-orange;
             display: inline-block;
             font-size: 13px;
             padding: 3px 6px;
             &:hover {
-              color: $color-blue;
-              background: $color-turquaz;
+              color: $color-orange;
+              background: $color-dark-blue;
               text-decoration: none;
             }
           }
@@ -2799,13 +2843,13 @@ button[type="submit"] {
         text-transform: uppercase;
         padding: 30px 0;
         margin-bottom: 30px;
-        color: $color-blue;
+        color: $color-orange;
         position: relative;
         &:before {
           content: "";
           width: 60px;
           height: 2px;
-          background: $color-turquaz;
+          background: $color-dark-blue;
           position: absolute;
           left: -40px;
           bottom: -2px;
@@ -2842,10 +2886,12 @@ button[type="submit"] {
   margin: 0 20%;
   margin-top: -50px;
   padding: 30px;
-  background: #fff;
+  background: $color-dark-blue;
+  color: $color-white;
   position: relative;
   z-index: 1;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
   #contact {
     display: block;
     .form-group {
@@ -2876,6 +2922,7 @@ button[type="submit"] {
         position: relative;
         z-index: 2;
         width: 100%;
+        border-radius: 15px;
       }
       input:focus + span {
         font-size: 13px;
@@ -2888,6 +2935,7 @@ button[type="submit"] {
         position: relative;
         z-index: 2;
         width: 100%;
+        border-radius: 15px;
       }
       textarea:focus + span {
         font-size: 13px;
@@ -2901,6 +2949,9 @@ button[type="submit"] {
         margin-bottom: 0;
         font-weight: 600;
         font-size: 13px;
+      }
+      .button {
+        padding: 16px 60px;
       }
     }
   }
@@ -2933,6 +2984,7 @@ button[type="submit"] {
   margin-bottom: -80px;
   position: relative;
   z-index: 2;
+  background-color: $color-white;
   .image {
     width: 100%;
     display: block;
@@ -2947,8 +2999,9 @@ button[type="submit"] {
     width: 100%;
     display: flex;
     padding: 70px 50px;
-    background: $color-blue;
+    background: #b43f3f;
     position: relative;
+    margin-bottom: -40px;
     &:before {
       content: "";
       width: 100%;
@@ -2991,8 +3044,8 @@ button[type="submit"] {
         display: inline-block;
         height: 56px;
         line-height: 56px;
-        background: $color-turquaz;
-        color: $color-blue;
+        background: $color-orange;
+        color: white;
         border: none;
         padding: 0 40px;
         font-size: 13px;
@@ -3014,7 +3067,7 @@ button[type="submit"] {
   display: flex;
   flex-wrap: wrap;
   padding-top: 150px;
-  background: url(../images/world-map.png) center no-repeat $color-dark;
+  background: url(../images/world-map.png) center no-repeat $color-dark-blue;
   background-size: auto 90%;
   color: #fff;
   position: relative;
@@ -3024,7 +3077,7 @@ button[type="submit"] {
     height: 0;
     border-style: solid;
     border-width: 20px 120vw 20px 0;
-    border-color: transparent $color-turquaz transparent transparent;
+    border-color: transparent $color-orange transparent transparent;
     position: absolute;
     left: -20vw;
     top: -20px;
@@ -3041,6 +3094,7 @@ button[type="submit"] {
   p {
     margin: 0;
     padding-right: 10%;
+    color: rgba($color: #fff, $alpha: 0.8);
   }
   h3 {
     font-size: 20px;
@@ -3060,13 +3114,13 @@ button[type="submit"] {
     li {
       display: inline-block;
       margin: 0;
-      margin-right: 10px;
+      margin-right: 24px;
       padding: 0;
       a {
         color: #fff;
-        font-size: 13px;
+        font-size: 32px;
         &:hover {
-          color: $color-turquaz;
+          color: $color-orange;
         }
       }
     }
@@ -3085,7 +3139,7 @@ button[type="submit"] {
         width: 5px;
         height: 5px;
         float: left;
-        background: $color-turquaz;
+        background: $color-dark-blue;
         border-radius: 50%;
         margin-right: 10px;
         margin-top: 10px;
@@ -3094,7 +3148,7 @@ button[type="submit"] {
         color: #fff;
         text-decoration: none;
         &:hover {
-          color: $color-turquaz;
+          color: $color-orange;
         }
       }
     }
@@ -3118,10 +3172,69 @@ button[type="submit"] {
       color: #fff;
       text-decoration: underline;
       &:hover {
-        color: $color-turquaz;
+        color: $color-dark-blue;
       }
     }
   }
+}
+
+.tab-pane {
+  border-radius: 16px !important;
+  .service-tab-content {
+    grid-template-columns: none !important;
+    width: 100%;
+    padding: 16px;
+    border-radius: 16px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      h4 {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+      }
+      p {
+        font-size: 16px;
+        text-align: center;
+      }
+      .image {
+        width: 100%;
+        height: 500px;
+        display: block;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 16px;
+        }
+      }
+    }
+  }
+}
+
+.back-to-top-btn {
+  display: none;
+  padding: 16px;
+  border: none;
+  border-radius: 99px;
+  background-color: $color-white;
+  color: $color-dark-blue;
+  font-weight: bolder;
+  position: fixed;
+  font-size: 2rem;
+  bottom: 60px;
+  right: 16px;
+  transition: all ease-in-out 0.8s;
+  z-index: 20;
 }
 
 /* RESPONSIVE MEDIUM  FIXES */
@@ -3426,6 +3539,15 @@ button[type="submit"] {
   .footer b {
     float: left;
   }
+}
+
+.service-we-provide-section {
+  background-color: $color-dark-blue;
+  color: $color-white !important;
+}
+
+.service-tab-section {
+  background-color: $color-white !important;
 }
 
 @-webkit-keyframes elasticus {
